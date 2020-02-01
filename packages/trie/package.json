@@ -10,9 +10,13 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/remusao/mono.git"
+    "url": "git+https://github.com/remusao/mono.git",
+    "directory": "packages/trie"
   },
   "scripts": {
     "clean": "rimraf dist coverage",
