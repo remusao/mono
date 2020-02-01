@@ -13,6 +13,9 @@
   "bin": {
     "thunderbird-msg-filters": "dist/cli.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "rimraf dist coverage",
     "lint": "tslint --config ../../tslint.json --project ./tsconfig.json",
