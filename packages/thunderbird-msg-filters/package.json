@@ -11,7 +11,7 @@
     "dist"
   ],
   "bin": {
-    "thunderbird-msg-filters": "dist/cli.js"
+    "thunderbird-msg-filters": "dist/cjs/cli.js"
   },
   "publishConfig": {
     "access": "public"
