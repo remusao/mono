@@ -3,6 +3,9 @@
   "references": [
     {
       "path": "./packages/trie/tsconfig.json"
+    },
+    {
+      "path": "./packages/thunderbird-msg-filters/tsconfig.json"
     }
   ]
 }
