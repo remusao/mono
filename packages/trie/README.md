@@ -1,11 +1,17 @@
 # `trie`
 
-> TODO: description
+> A tiny but fast trie implementation for ASCII strings
 
 ## Usage
 
-```
-const trie = require('trie');
+```javascript
+const { create, lookup } = require('@remusao/trie');
+const trie = create([
+    'foo',
+    'bar',
+]);
 
-// TODO: DEMONSTRATE API
+lookup(trie, 'foo'); // true
+lookup(trie, 'bar'); // true
+lookup(trie, 'baz'); // false
 ```
