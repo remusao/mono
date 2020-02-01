@@ -1,4 +1,4 @@
-# `trie`
+# `@remusao/trie`
 
 > A tiny but fast trie implementation for ASCII strings
 
