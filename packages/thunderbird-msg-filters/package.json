@@ -8,10 +8,11 @@
   "main": "dist/cjs/index.js",
   "module": "dist/es6/index.js",
   "files": [
-    "dist"
+    "dist",
+    "bin"
   ],
   "bin": {
-    "thunderbird-msg-filters": "dist/cjs/cli.js"
+    "thunderbird-msg-filters": "bin/cli.js"
   },
   "publishConfig": {
     "access": "public"
