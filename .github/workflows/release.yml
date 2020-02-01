@@ -1,0 +1,49 @@
+name: Release
+
+on: [push]
+
+jobs:
+  release:
+    name: Trigger release
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    steps:
+      - uses: actions/checkout@v1
+
+      # From: https://intuit.github.io/auto/pages/build-platforms/github-actions.html
+      - name: Prepare repository
+        run: |
+          git checkout ${GITHUB_REF:11} --
+          git remote rm origin
+          git remote add origin "https://x-access-token:$GH_TOKEN@github.com/remusao/mono.git"
+          git fetch origin --tags
+          git branch --set-upstream-to origin/${GITHUB_REF:11} ${GITHUB_REF:11}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Create release
+        run: |
+          yarn bootstrap
+          yarn build
+          yarn bundle
+          yarn lint
+          yarn release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
