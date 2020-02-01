@@ -1,6 +1,11 @@
 # Mono
 
+![tests](https://github.com/remusao/mono/workflows/Tests/badge.svg)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+[![lgtm alerts](https://img.shields.io/lgtm/alerts/g/remusao/mono.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/remusao/mono/alerts/)
+[![lgtm grade](https://img.shields.io/lgtm/grade/javascript/g/remusao/mono.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/remusao/mono/context:javascript)
+[![dependabot](https://api.dependabot.com/badges/status?host=github&repo=remusao/mono)](https://dependabot.com)
+![license](https://img.shields.io/github/license/remusao/mono)
 
 ## Libraries
 
