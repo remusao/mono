@@ -8,23 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
-      # From: https://intuit.github.io/auto/pages/build-platforms/github-actions.html
       - name: Prepare repository
-        run: |
-          git checkout ${GITHUB_REF:11} --
-          git remote rm origin
-          git remote add origin "https://x-access-token:$GH_TOKEN@github.com/remusao/mono.git"
-          git fetch origin --tags
-          git branch --set-upstream-to origin/${GITHUB_REF:11} ${GITHUB_REF:11}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
+        run: git fetch --prune --unshallow
 
       - name: Get yarn cache
         id: yarn-cache
