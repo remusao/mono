@@ -1,0 +1,43 @@
+{
+  "name": "@remusao/trie",
+  "version": "1.0.0",
+  "description": "A tiny trie implementation",
+  "author": "Rémi Berson <remi@cliqz.com>",
+  "homepage": "https://github.com/remusao/mono#readme",
+  "license": "MPL-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es6/index.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remusao/mono.git",
+    "directory": "packages/trie"
+  },
+  "scripts": {
+    "clean": "rimraf dist coverage",
+    "lint": "tslint --config ../../tslint.json --project ./tsconfig.json",
+    "build": "tsc --build ./tsconfig.json",
+    "watch": "tsc --build ./tsconfig.json --watch",
+    "bundle": "tsc --build ./tsconfig.bundle.json",
+    "prebundle": "yarn build",
+    "prepack": "yarn run bundle",
+    "test": "jest --config ./jest.config.js --coverage index.test.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/remusao/mono/issues"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.1",
+    "jest": "^25.1.0",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^25.0.0",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5"
+  }
+}
