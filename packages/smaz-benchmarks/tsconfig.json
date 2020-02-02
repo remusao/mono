@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "allowJs": true
+  },
+  "references": [
+    { "path": "../smaz/tsconfig.json" }
+  ],
+  "include": [
+    "index.ts",
+    "./deps/compatto/index.js"
+  ]
+}

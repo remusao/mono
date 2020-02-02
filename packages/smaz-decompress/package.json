@@ -1,0 +1,45 @@
+{
+  "name": "@remusao/smaz-decompress",
+  "version": "1.6.0",
+  "description": "",
+  "author": "Rémi Berson <remi@cliqz.com>",
+  "homepage": "https://github.com/remusao/mono#readme",
+  "license": "MPL-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es6/index.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remusao/mono.git",
+    "directory": "packages/smaz-decompress"
+  },
+  "scripts": {
+    "clean": "rimraf dist coverage",
+    "lint": "tslint --config ../../tslint.json --project ./tsconfig.json",
+    "build": "tsc --build ./tsconfig.json",
+    "watch": "tsc --build ./tsconfig.json --watch",
+    "bundle": "tsc --build ./tsconfig.bundle.json",
+    "prebundle": "yarn build",
+    "prepack": "yarn run bundle",
+    "test": "nyc mocha ./dist/cjs/index.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/remusao/mono/issues"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.8",
+    "@types/mocha": "^7.0.1",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
+    "rimraf": "^3.0.0",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5"
+  }
+}

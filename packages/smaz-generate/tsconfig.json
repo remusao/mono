@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist/cjs",
+    "declarationDir": "dist/types"
+  },
+  "references": [
+    { "path": "../smaz-compress/tsconfig.json" },
+    { "path": "../smaz/tsconfig.json" }
+  ],
+  "include": [
+    "index.ts",
+    "index.test.ts"
+  ]
+}
