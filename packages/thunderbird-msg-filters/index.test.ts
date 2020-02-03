@@ -1,7 +1,7 @@
 import 'mocha';
 import { expect } from 'chai';
 
-import { parse, format } from './index';
+import { parse, format } from '.';
 
 describe('@remusao/thunderbird-msg-filters', () => {
   it('pretty-print like original', () => {
