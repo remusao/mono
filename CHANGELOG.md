@@ -1,5 +1,18 @@
 # (Mon Feb 03 2020)
 
+#### :bug: Bug Fix
+
+- `@remusao/counter@1.1.1`, `@remusao/smaz-compress@1.7.1`, `@remusao/smaz-decompress@1.7.1`, `@remusao/smaz-generate@1.7.1`, `@remusao/smaz@1.7.1`, `@remusao/thunderbird-msg-filters@1.3.1`, `@remusao/trie@1.2.1`
+  - Add types entry in package.json [#11](https://github.com/remusao/mono/pull/11) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
+# (Mon Feb 03 2020)
+
 #### :rocket: New Feature
 
 - `@remusao/counter@1.1.0`, `@remusao/smaz-compress@1.7.0`, `@remusao/smaz-decompress@1.7.0`, `@remusao/smaz-generate@1.7.0`, `@remusao/smaz@1.7.0`
