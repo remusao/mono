@@ -5,7 +5,22 @@
       "path": "./packages/trie/tsconfig.json"
     },
     {
+      "path": "./packages/counter/tsconfig.json"
+    },
+    {
       "path": "./packages/thunderbird-msg-filters/tsconfig.json"
+    },
+    {
+      "path": "./packages/smaz/tsconfig.json"
+    },
+    {
+      "path": "./packages/smaz-generate/tsconfig.json"
+    },
+    {
+      "path": "./packages/smaz-compress/tsconfig.json"
+    },
+    {
+      "path": "./packages/smaz-decompress/tsconfig.json"
     }
   ]
 }

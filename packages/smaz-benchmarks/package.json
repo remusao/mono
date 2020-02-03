@@ -1,0 +1,36 @@
+{
+  "name": "@remusao/smaz-benchmarks",
+  "private": true,
+  "version": "1.6.0",
+  "description": "Benchmark various small string compression libraries",
+  "author": "Rémi Berson <remi@cliqz.com>",
+  "homepage": "https://github.com/remusao/mono#readme",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remusao/mono.git",
+    "directory": "packages/smaz-benchmarks"
+  },
+  "scripts": {
+    "clean": "rimraf dist coverage deps",
+    "lint": "tslint --config ../../tslint.json --project ./tsconfig.json",
+    "bench": "./prepare.sh && ts-node --project ./tsconfig.json ./index.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/remusao/mono/issues"
+  },
+  "dependencies": {
+    "@remusao/smaz": "^1.6.0",
+    "benchmark": "^2.1.4",
+    "chalk": "^3.0.0",
+    "ts-node": "^8.6.2"
+  },
+  "devDependencies": {
+    "@types/benchmark": "^1.0.31",
+    "@types/node": "^13.7.0",
+    "rimraf": "^3.0.0",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5"
+  }
+}
