@@ -1,3 +1,27 @@
+# (Mon Feb 03 2020)
+
+#### :rocket: New Feature
+
+- `@remusao/counter@1.1.0`, `@remusao/smaz-compress@1.7.0`, `@remusao/smaz-decompress@1.7.0`, `@remusao/smaz-generate@1.7.0`, `@remusao/smaz@1.7.0`
+  - Add smaz packages. [#10](https://github.com/remusao/mono/pull/10) ([@remusao](https://github.com/remusao))
+
+#### :house: Internal
+
+- Fix name and email in auto config [#7](https://github.com/remusao/mono/pull/7) ([@remusao](https://github.com/remusao))
+- Only trigger release workflow on pull_request or master [#6](https://github.com/remusao/mono/pull/6) ([@remusao](https://github.com/remusao))
+- `@remusao/thunderbird-msg-filters@1.3.0`, `@remusao/trie@1.2.0`
+  - Use chai and mocha instead of jest for testing [#9](https://github.com/remusao/mono/pull/9) ([@remusao](https://github.com/remusao))
+
+#### :memo: Documentation
+
+- Update badges in README.md [#8](https://github.com/remusao/mono/pull/8) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # (Sat Feb 01 2020)
 
 #### :rocket: New Feature
