@@ -2,7 +2,8 @@ import { expect } from 'chai';
 import 'mocha';
 
 import { Smaz } from '@remusao/smaz';
-import { generate, Builder } from './index';
+
+import { generate, Builder } from '.';
 
 describe('@remusao/smaz-generate', () => {
   describe('#Builder', () => {
