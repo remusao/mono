@@ -7,6 +7,7 @@
   },
   "include": [
     "index.ts",
-    "cli.ts"
+    "cli.ts",
+    "index.test.ts"
   ]
 }

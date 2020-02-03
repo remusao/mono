@@ -6,6 +6,7 @@
     "declarationDir": "dist/types"
   },
   "include": [
-    "index.ts"
+    "index.ts",
+    "index.test.ts"
   ]
 }
