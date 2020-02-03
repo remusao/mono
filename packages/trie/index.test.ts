@@ -1,34 +1,37 @@
+import { expect } from 'chai';
+import 'mocha';
+
 import { create, lookup } from './index';
 
 describe('@remusao/trie', () => {
   describe('#create', () => {
     it('empty trie', () => {
       const trie = create([]);
-      expect(trie.code).toBeUndefined();
-      expect(trie.chars).toHaveLength(128);
-      expect(lookup(trie, '')).toBe(false);
-      expect(lookup(trie, 'foo')).toBe(false);
+      expect(trie.code).to.be.undefined;
+      expect(trie.chars).to.have.length(128);
+      expect(lookup(trie, '')).to.be.false;
+      expect(lookup(trie, 'foo')).to.be.false;
     });
 
     it('trie with one string', () => {
       const trie = create(['aaaa']);
-      expect(lookup(trie, '')).toBe(false);
-      expect(lookup(trie, 'a')).toBe(false);
-      expect(lookup(trie, 'aa')).toBe(false);
-      expect(lookup(trie, 'aaa')).toBe(false);
-      expect(lookup(trie, 'aaaa')).toBe(true);
-      expect(lookup(trie, 'aaaaa')).toBe(false);
+      expect(lookup(trie, '')).to.be.false;
+      expect(lookup(trie, 'a')).to.be.false;
+      expect(lookup(trie, 'aa')).to.be.false;
+      expect(lookup(trie, 'aaa')).to.be.false;
+      expect(lookup(trie, 'aaaa')).to.be.true;
+      expect(lookup(trie, 'aaaaa')).to.be.false;
     });
 
     it('trie with two strings', () => {
       const trie = create(['aaaa', 'aaab']);
-      expect(lookup(trie, '')).toBe(false);
-      expect(lookup(trie, 'a')).toBe(false);
-      expect(lookup(trie, 'aa')).toBe(false);
-      expect(lookup(trie, 'aaa')).toBe(false);
-      expect(lookup(trie, 'aaaa')).toBe(true);
-      expect(lookup(trie, 'aaab')).toBe(true);
-      expect(lookup(trie, 'aaaaa')).toBe(false);
+      expect(lookup(trie, '')).to.be.false;
+      expect(lookup(trie, 'a')).to.be.false;
+      expect(lookup(trie, 'aa')).to.be.false;
+      expect(lookup(trie, 'aaa')).to.be.false;
+      expect(lookup(trie, 'aaaa')).to.be.true;
+      expect(lookup(trie, 'aaab')).to.be.true;
+      expect(lookup(trie, 'aaaaa')).to.be.false;
     });
   });
 });

@@ -9,21 +9,47 @@
 
 ## Libraries
 
-* tsmaz
-* tsmaz-compress
-* tsmaz-decompress
-* tsmaz-generate
+* auto-config
+* thunderbird-msg-filters
+* trie
 
-## Stack
+## Philosophy
 
-This repository is also a way for me to experiment with different ways to manage
-a monorepo of JavaScript libraries. The following tools are currently used:
+This repository is also a way for me to experiment with monorepos and
+how best to organize them. I have been trying out many different tools
+or "stacks" in the past and have stabilized on the following:
 
-* TypeScript (producing es6 and cjs output using `tsc`)
-* Jest with `ts-jest` to run unit tests
-* Tslint for code linting (I still did not migrate to eslint)
-* Yarn workspaces
-* Lerna for publishing and versions management
+* All code is written in TypeScript targeting ES6.
+* Tslint is used for linting code (I still did not migrate to eslint).
+* Lerna is used for version management and publishing (used by `auto`).
+* Yarn workspaces are used to share a lock file and `node_modules` folder.
+* Auto is used for continuous publishing of the libraries (using Lerna).
+* Each package contains its own package.json and dependencies.
+* Each package can be built independently.
+* Composite and incremental modes of TypeScript are leveraged for fast compilation.
+* Each package exposes commonjs and es6 entry points, built with `tsc`.
+* Tests are written in TypeScript and compiled like library code.
+* Mocha is used to launch tests.
+* Chai is used for test assertions.
 
-There is currently no bundling or minification performed on published packages,
-but if this is done in the future, rollup will be used.
+There is currently no bundling or minification performed on published
+packages, but this will be done in the future using Rollup will be used.
+
+Other thoughts:
+
+* No babel is used, tsc is more than capable of producing build output.
+* Dev/normal mode produces commonjs bundles, which can be used in watch
+  mode to iterate faster, run tests, load library locally in Node.js.
+* Bundle mode produces extra es6 artifacts, which only happens in CI so
+  it's fine if it takes a bit more time. ES6 output is also created using
+  tsc.
+* Packages names are namespaced with the name of the GitHub account @remusao to
+  prevent any naming collision (e.g. 'trie' package would have to be renamed)
+  and provide some kind of consistency. Also, experience shows that fancy
+  package names tend to be misunderstood and harder to discover.
+* As long as both commonjs and es6 modules will have to co-exist in the Node.js
+  ecosystem, there will be extra complication for package maintainers. Ideally
+  only es6 would be required, which would simplify building and bundling code.
+  I expect a migration of the repository to 100% ES6 modules before end of 2020
+  when all tooling is compatible (e.g. mocha is currently adding first-class
+  support for ES6 modules).

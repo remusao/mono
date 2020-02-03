@@ -1,3 +1,6 @@
+import 'mocha';
+import { expect } from 'chai';
+
 import { parse, format } from './index';
 
 describe('@remusao/thunderbird-msg-filters', () => {
@@ -18,6 +21,6 @@ describe('@remusao/thunderbird-msg-filters', () => {
       'actionValue="100"',
       'condition="ALL"',
     ].join('\n');
-    expect(format(parse(original))).toBe(original);
+    expect(format(parse(original))).to.be.eql(original);
   });
 });
