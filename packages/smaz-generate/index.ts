@@ -210,9 +210,8 @@ export function generate(
       let roundsWithNoImprovements = 0;
       debug(`[finetune] ${n}-grams`, candidates);
 
+      let bestRatio = getCompressionRatio(codebook, originalStrings);
       for (const [candidate, count] of candidates) {
-        let bestRatio = getCompressionRatio(codebook, originalStrings);
-
         // If codebook is not full yet, just add the letter at the end
         if (codebook.length < 254) {
           codebook.push(candidate);
