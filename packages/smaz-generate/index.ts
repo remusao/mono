@@ -126,7 +126,6 @@ function getNextBestSubstring(counter: Counter<string>, minNgram: number = 1): s
       // Who does not like a bit of magic?
       const score = count * substring.length ** 2.3;
       if (score > bestScore) {
-        // console.log(' >', substring, count, (count * substring.length ** 2.2));
         bestSubstring = substring;
         bestScore = score;
       }
@@ -195,16 +194,9 @@ export function generate(
     codebook.push(substring);
     debug(`+ ${substring}`);
 
-    // const t0 = Date.now();
     const { added, removed } = strings.removeWithSubstring(substring);
-    // const t1 = Date.now();
-    // console.log('removeWithSubstring', t1 - t0);
     addCounts(added.entries(), counter, minNgram, maxNgram);
-    // const t2 = Date.now();
-    // console.log('addCounts', t2 - t1, `(${added.size})`);
     delCounts(removed.entries(), counter, minNgram, maxNgram);
-    // const t3 = Date.now();
-    // console.log('delCounts', t3 - t2, `(${removed.size})`);
   }
 
   debug(`ratio = ${getCompressionRatio(codebook, originalStrings)}%`);

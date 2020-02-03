@@ -1,7 +1,7 @@
 {
   "name": "@remusao/smaz-compress",
   "version": "1.6.0",
-  "description": "",
+  "description": "Compress strings using custom codebooks",
   "author": "Rémi Berson <remi@cliqz.com>",
   "homepage": "https://github.com/remusao/mono#readme",
   "license": "MPL-2.0",

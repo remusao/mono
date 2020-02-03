@@ -6,6 +6,7 @@
     "declarationDir": "dist/types"
   },
   "references": [
+    { "path": "../counter/tsconfig.json" },
     { "path": "../smaz-compress/tsconfig.json" },
     { "path": "../smaz/tsconfig.json" }
   ],

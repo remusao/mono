@@ -1,9 +1,3 @@
-# `@remusao/smaz-compress`
+# `@remusao/smaz-decompress`
 
-> TODO
-
-## Usage
-
-```javascript
-const { compress } = require('@remusao/smaz-compress');
-```
+> Decompress strings using custom codebooks
