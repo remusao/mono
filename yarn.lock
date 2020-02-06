@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@auto-it/core@^9.9.1":
-  version "9.9.1"
-  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-9.9.1.tgz#2433a4fc01ddbc9a76a8a4b5442af0dac3025fe5"
-  integrity sha512-6ZGRHoDVaUohhrW/zoYl1Tx5PjfSvOpEel7J/n4xfnEu2gqpzeFbWBOts9tQ2v9evntCsCrf1DamnPUB5cXbEg==
+"@auto-it/core@^9.10.1":
+  version "9.10.1"
+  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-9.10.1.tgz#4823fbebe0d60009da3136df753fc2a45266c89a"
+  integrity sha512-22t38Fl19rmZII3F6oIC7H2zrfeE3lIDolX1cHMCHjvYVxPKOO9BjbjNuvV4CjqhDqLPtRlgOk3hwETQE8u7eA==
   dependencies:
     "@octokit/core" "2.2.0"
     "@octokit/graphql" "4.3.1"
@@ -14,6 +14,7 @@
     "@octokit/plugin-throttling" "^3.2.0"
     "@octokit/rest" "16.38.3"
     await-to-js "^2.1.1"
+    chalk "^3.0.0"
     cosmiconfig "6.0.0"
     deepmerge "^4.0.0"
     dotenv "^8.0.0"
@@ -24,21 +25,23 @@
     https-proxy-agent "^4.0.0"
     import-cwd "^3.0.0"
     lodash.chunk "^4.2.0"
+    log-symbols "^3.0.0"
     node-fetch "2.6.0"
     semver "^7.0.0"
     signale "^1.4.0"
     tapable "^2.0.0-beta.2"
+    terminal-link "^2.1.1"
     tinycolor2 "^1.4.1"
     tslib "1.10.0"
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/npm@^9.9.1":
-  version "9.9.1"
-  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-9.9.1.tgz#29e73fe43879d6f1d16de7f3dd09d25caf0cec9b"
-  integrity sha512-0uFMM4OpDu3tcAlbwvgFA46pbcB0Nk7jJFaiakgk6MyLS3m94l3XI7G9zs7/1IU1APHPIqxc1OIyr7PZXbxxPw==
+"@auto-it/npm@^9.10.1":
+  version "9.10.1"
+  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-9.10.1.tgz#52221a238b8ce1c4818208ab28395f654e1f8c08"
+  integrity sha512-Lv/DRGUkPm45lhDsjAt+2Mirj1Unvw71EPHuCzQ2Tf7INWzWQdkcVo3YjvJWa07MnCCu5oLkLDC3nrrDj8UBCg==
   dependencies:
-    "@auto-it/core" "^9.9.1"
+    "@auto-it/core" "^9.10.1"
     env-ci "^5.0.1"
     get-monorepo-packages "^1.1.0"
     parse-author "^2.0.0"
@@ -50,12 +53,12 @@
     url-join "^4.0.0"
     user-home "^2.0.0"
 
-"@auto-it/released@^9.9.1":
-  version "9.9.1"
-  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-9.9.1.tgz#a3fd57970b95d6ceed7b0637fcc1538c75da2212"
-  integrity sha512-h212zw7Xc7pQuZepPn1IKgjirKUC9K5qjFJ/mFeZ6/OCv61A3v8kzgxl1sn1Lgxk4YackdxBqx7minwT05g/Yw==
+"@auto-it/released@^9.10.1":
+  version "9.10.1"
+  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-9.10.1.tgz#dbcdac691907610f58104d942c0cc5ddb2691055"
+  integrity sha512-t4NmJ8EbjGIs8lNXIdAaDXsskxCK1xZ91EK/DThEqXRuJUVEHXdUV/d/DI2jbAJouUoor0RtJdLeZ7oIi+q4DQ==
   dependencies:
-    "@auto-it/core" "^9.9.1"
+    "@auto-it/core" "^9.10.1"
     deepmerge "^4.0.0"
     tslib "1.10.0"
 
@@ -1267,6 +1270,13 @@ ansi-escapes@^3.2.0:
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
   integrity sha512-cBhpre4ma+U0T1oM5fXg7Dy1Jw7zzwv7lt/GoCpr+hDQJoYnKVPLL4dCvSEFMmQurOQvSrwT7SL/DAlhBI97RQ==
 
+ansi-escapes@^4.2.1:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-4.3.0.tgz#a4ce2b33d6b214b7950d8595c212f12ac9cc569d"
+  integrity sha512-EiYhwo0v255HUL6eDyuLrXEkTi7WwVCLAw+SeOQ7M7qdun1z1pum4DEm/nuqIVbPvi9RPPc9k9LbyBv6H0DwVg==
+  dependencies:
+    type-fest "^0.8.1"
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -1467,13 +1477,13 @@ author-regex@^1.0.0:
   integrity sha1-0IiFvmubv5Q5/gh8dihyRfCoFFA=
 
 auto@^9.9.0:
-  version "9.9.1"
-  resolved "https://registry.yarnpkg.com/auto/-/auto-9.9.1.tgz#abda15cdf701cbeb1eabf26747a1075a83800e19"
-  integrity sha512-sCPnrNozYWihKkIDlgyoJ3EAjI1emTCqCE8W+yeWwQOIyJlRLn3TBPM8+QhtU5w3mNvMqezOgaGWll91T+vdHw==
+  version "9.10.1"
+  resolved "https://registry.yarnpkg.com/auto/-/auto-9.10.1.tgz#d20792f56ab1ba2f83557d8fabb91b1e1291d629"
+  integrity sha512-9+x40li+Y9ai9mLIadaAG76v4PQZshWDvMrCcJaNIopXnloiSeTnOmDcPQae5/V/ZUa1zi/GHl81fPFSQrpv4A==
   dependencies:
-    "@auto-it/core" "^9.9.1"
-    "@auto-it/npm" "^9.9.1"
-    "@auto-it/released" "^9.9.1"
+    "@auto-it/core" "^9.10.1"
+    "@auto-it/npm" "^9.10.1"
+    "@auto-it/released" "^9.10.1"
     chalk "^3.0.0"
     command-line-application "^0.9.3"
     endent "^1.3.0"
@@ -3995,6 +4005,13 @@ log-symbols@2.2.0:
   dependencies:
     chalk "^2.0.1"
 
+log-symbols@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-3.0.0.tgz#f3a08516a5dea893336a7dee14d18a1cfdab77c4"
+  integrity sha512-dSkNGuI7iG3mfvDzUuYZyvk5dD9ocYCYzNU6CYDE6+Xqd+gwme6Z00NS3dUh8mq/73HaEtT7m6W+yUPtU6BZnQ==
+  dependencies:
+    chalk "^2.4.2"
+
 loud-rejection@^1.0.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/loud-rejection/-/loud-rejection-1.6.0.tgz#5b46f80147edee578870f086d04821cf998e551f"
@@ -5956,12 +5973,20 @@ supports-color@^5.3.0:
   dependencies:
     has-flag "^3.0.0"
 
-supports-color@^7.1.0:
+supports-color@^7.0.0, supports-color@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-7.1.0.tgz#68e32591df73e25ad1c4b49108a2ec507962bfd1"
   integrity sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
   dependencies:
     has-flag "^4.0.0"
+
+supports-hyperlinks@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/supports-hyperlinks/-/supports-hyperlinks-2.0.0.tgz#b1b94a159e9df00b0a554b2d5f0e0a89690334b0"
+  integrity sha512-bFhn0MQ8qefLyJ3K7PpHiPUTuTVPWw6RXfaMeV6xgJLXtBbszyboz1bvGTVv4R0YpQm2DqlXXn0fFHhxUHVE5w==
+  dependencies:
+    has-flag "^4.0.0"
+    supports-color "^7.0.0"
 
 table-layout@^1.0.0:
   version "1.0.0"
@@ -6028,6 +6053,14 @@ temp-write@^3.4.0:
     pify "^3.0.0"
     temp-dir "^1.0.0"
     uuid "^3.0.1"
+
+terminal-link@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/terminal-link/-/terminal-link-2.1.1.tgz#14a64a27ab3c0df933ea546fba55f2d078edc994"
+  integrity sha512-un0FmiRUQNr5PJqy9kP7c40F5BOfpGlYTrxonDChEZB7pzZxRNp/bt+ymiy9/npwXya9KH99nJ/GXFIiUkYGFQ==
+  dependencies:
+    ansi-escapes "^4.2.1"
+    supports-hyperlinks "^2.0.0"
 
 test-exclude@^6.0.0:
   version "6.0.0"
@@ -6225,7 +6258,7 @@ type-fest@^0.3.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.3.1.tgz#63d00d204e059474fe5e1b7c011112bbd1dc29e1"
   integrity sha512-cUGJnCdr4STbePCgqNFbpVNCepa+kAVohJs1sLhxzdH+gnEoOd8VhbYa7pD3zZYGiURWM2xzEII3fQcRizDkYQ==
 
-type-fest@^0.8.0:
+type-fest@^0.8.0, type-fest@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
