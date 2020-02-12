@@ -3,7 +3,7 @@
   "references": [
     { "path": "../smaz/tsconfig.json" }
   ],
-  "include": [
-    "index.ts"
+  "files": [
+    "./index.ts"
   ]
 }

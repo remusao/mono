@@ -12,8 +12,5 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }

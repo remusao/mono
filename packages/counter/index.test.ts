@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import { Counter } from '.';
+import { Counter } from './index';
 
 describe('@remusao/counter', () => {
   describe('#constructor', () => {

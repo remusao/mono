@@ -1,14 +1,14 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import { create, lookup } from '.';
+import { create, lookup } from './index';
 
 describe('@remusao/trie', () => {
   describe('#create', () => {
     it('empty trie', () => {
       const trie = create([]);
       expect(trie.code).to.be.undefined;
-      expect(trie.chars).to.have.length(128);
+      expect(trie.chars).to.have.length(0);
       expect(lookup(trie, '')).to.be.false;
       expect(lookup(trie, 'foo')).to.be.false;
     });

@@ -9,8 +9,8 @@
     { "path": "../smaz-compress/tsconfig.json" },
     { "path": "../smaz-decompress/tsconfig.json" }
   ],
-  "include": [
-    "index.ts",
-    "index.test.ts"
+  "files": [
+    "./index.ts",
+    "./index.test.ts"
   ]
 }
