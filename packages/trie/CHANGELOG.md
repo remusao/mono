@@ -1,3 +1,15 @@
+# v1.3.0 (Wed Feb 12 2020)
+
+#### :running_woman: Performance
+
+- Use Map instead of array for trie to lower memory usage [#21](https://github.com/remusao/mono/pull/21) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # v1.2.1 (Mon Feb 03 2020)
 
 #### :bug: Bug Fix

@@ -1,3 +1,25 @@
+# (Wed Feb 12 2020)
+
+#### :running_woman: Performance
+
+- `@remusao/counter@1.2.0`, `@remusao/smaz-compress@1.8.0`, `@remusao/smaz-decompress@1.8.0`, `@remusao/smaz-generate@1.8.0`, `@remusao/smaz@1.8.0`, `@remusao/thunderbird-msg-filters@1.4.0`, `@remusao/trie@1.3.0`
+  - Use Map instead of array for trie to lower memory usage [#21](https://github.com/remusao/mono/pull/21) ([@remusao](https://github.com/remusao))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump @types/node from 13.7.0 to 13.7.1 [#20](https://github.com/remusao/mono/pull/20) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump rimraf from 3.0.1 to 3.0.2 [#18](https://github.com/remusao/mono/pull/18) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chai from 4.2.8 to 4.2.9 [#19](https://github.com/remusao/mono/pull/19) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.9.1 to 9.10.4 [#17](https://github.com/remusao/mono/pull/17) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.9.0 to 9.9.1 [#12](https://github.com/remusao/mono/pull/12) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # (Mon Feb 03 2020)
 
 #### :bug: Bug Fix
