@@ -1,141 +1,12 @@
 
 export interface Trie {
-  chars: (undefined | Trie)[];
+  chars: Map<number, Trie>;
   code: number | undefined;
 }
 
 function newNode(): Trie {
   return {
-    chars: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-    ],
+    chars: new Map(),
     code: undefined,
   };
 }
@@ -147,10 +18,10 @@ export function create(strings: readonly string[]): Trie {
     let root = node;
     for (let j = 0; j < tok.length; j += 1) {
       const c = tok.charCodeAt(j);
-      let next = root.chars[c];
+      let next = root.chars.get(c);
       if (next === undefined) {
         next = newNode();
-        root.chars[c] = next;
+        root.chars.set(c, next);
       }
       root = next;
     }
@@ -166,7 +37,7 @@ export function lookup(trie: Trie, str: string): boolean {
       return false;
     }
 
-    node = node.chars[str.charCodeAt(i)];
+    node = node.chars.get(str.charCodeAt(i));
   }
 
   return node !== undefined && node.code  !== undefined;

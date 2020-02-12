@@ -18,6 +18,7 @@
     "build": "tsc --build ./tsconfig.project.json",
     "bundle": "lerna run bundle",
     "test": "lerna run --concurrency 1 test",
+    "pretest": "yarn build",
     "clean": "lerna run --parallel clean && lerna clean --yes",
     "release": "auto shipit"
   },

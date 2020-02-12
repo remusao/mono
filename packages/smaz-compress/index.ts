@@ -28,7 +28,7 @@ export class SmazCompress {
       let root: Trie | undefined = this.trie;
 
       for (let j = inputIndex; j < str.length; j += 1) {
-        root = root.chars[str.charCodeAt(j)];
+        root = root.chars.get(str.charCodeAt(j));
         if (root === undefined) {
           break;
         }
@@ -80,7 +80,7 @@ export class SmazCompress {
       let root: Trie | undefined = this.trie;
 
       for (let j = inputIndex; j < len; j += 1) {
-        root = root.chars[str.charCodeAt(j)];
+        root = root.chars.get(str.charCodeAt(j));
         if (root === undefined) {
           break;
         }

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import { SmazDecompress } from '.';
+import { SmazDecompress } from './index';
 
 describe('@remusao/smaz-compress', () => {
   it('decompresses empty array', () => {

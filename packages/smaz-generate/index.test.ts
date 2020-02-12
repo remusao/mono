@@ -3,7 +3,7 @@ import 'mocha';
 
 import { Smaz } from '@remusao/smaz';
 
-import { generate, Builder } from '.';
+import { generate, Builder } from './index';
 
 describe('@remusao/smaz-generate', () => {
   describe('#Builder', () => {

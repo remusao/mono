@@ -8,8 +8,8 @@
   "references": [
     { "path": "../trie/tsconfig.json" }
   ],
-  "include": [
-    "index.ts",
-    "index.test.ts"
+  "files": [
+    "./index.ts",
+    "./index.test.ts"
   ]
 }
