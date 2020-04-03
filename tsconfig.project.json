@@ -21,6 +21,9 @@
     },
     {
       "path": "./packages/smaz-decompress/tsconfig.json"
+    },
+    {
+      "path": "./packages/small/tsconfig.json"
     }
   ]
 }
