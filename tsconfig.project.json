@@ -24,6 +24,9 @@
     },
     {
       "path": "./packages/small/tsconfig.json"
+    },
+    {
+      "path": "./packages/guess-url-type/tsconfig.json"
     }
   ]
 }
