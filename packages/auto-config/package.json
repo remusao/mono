@@ -26,8 +26,7 @@
   },
   "auto": {
     "plugins": [
-      "npm",
-      "released"
+      "npm"
     ],
     "labels": [
       {
