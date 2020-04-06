@@ -8,6 +8,8 @@ export default {
     'html',
     '.htm',
     'htm',
+    'noopframe',
+    'noop.html',
   ],
   body: '<!DOCTYPE html>',
 };

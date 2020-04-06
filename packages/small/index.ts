@@ -10,6 +10,7 @@ import mp4 from './src/mp4';
 import pdf from './src/pdf';
 import png from './src/png';
 import svg from './src/svg';
+import txt from './src/txt';
 import wav from './src/wav';
 import webm from './src/webm';
 import webp from './src/webp';
@@ -110,6 +111,7 @@ const MIME_TO_RESOURCE = (() => {
     pdf,
     png,
     svg,
+    txt,
     wav,
     webm,
     webp,
@@ -124,11 +126,7 @@ const MIME_TO_RESOURCE = (() => {
 })();
 
 export function getFallbackTextResource() {
-  return {
-    contentType: 'text/plain',
-    aliases: ['text/plain'],
-    body: '',
-  };
+  return txt;
 }
 
 export function getFallbackBlobResource() {
@@ -139,8 +137,12 @@ export function getFallbackBlobResource() {
   };
 }
 
+export function hasResourceForMime(mime: string): boolean {
+  return MIME_TO_RESOURCE[mime] !== undefined;
+}
+
 export function getResourceForMime(mime: string) {
-  return MIME_TO_RESOURCE[mime] || getFallbackBlobResource();
+  return MIME_TO_RESOURCE[mime] || getFallbackTextResource();
 }
 
 export function getDataUrlForMime(mime: string): string {
@@ -161,6 +163,7 @@ export {
   pdf,
   png,
   svg,
+  txt,
   wav,
   webm,
   webp,
