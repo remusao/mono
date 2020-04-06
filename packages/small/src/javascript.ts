@@ -11,7 +11,9 @@ export default {
     'jsx',
     'typescript',
     '.ts',
-    'ts'
+    'ts',
+    'noop.js',
+    'noopjs',
   ],
   body: '',
 };
