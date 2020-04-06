@@ -1,4 +1,3 @@
-import avi from './src/avi';
 import flv from './src/flv';
 import gif from './src/gif';
 import html from './src/html';
@@ -20,7 +19,7 @@ import wmv from './src/wmv';
 // - [ ] .aac 	AAC audio 	audio/aac
 // - [ ] .abw 	AbiWord document 	application/x-abiword
 // - [ ] .arc 	Archive document (multiple files embedded) 	application/x-freearc
-// - [x] .avi 	AVI: Audio Video Interleave 	video/x-msvideo
+// - [ ] .avi 	AVI: Audio Video Interleave 	video/x-msvideo
 // - [ ] .azw 	Amazon Kindle eBook format 	application/vnd.amazon.ebook
 // - [ ] .bin 	Any kind of binary data 	application/octet-stream
 // - [ ] .bmp 	Windows OS/2 Bitmap Graphics 	image/bmp
@@ -99,7 +98,6 @@ const MIME_TO_RESOURCE = (() => {
     };
   } = {};
   for (const fake of [
-    avi,
     flv,
     gif,
     html,
@@ -151,7 +149,6 @@ export function getDataUrlForMime(mime: string): string {
 }
 
 export {
-  avi,
   flv,
   gif,
   html,
