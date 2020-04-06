@@ -1,3 +1,15 @@
+# v1.1.2 (Mon Apr 06 2020)
+
+#### :nail_care: Polish
+
+- Add more aliases and plain txt mime [#111](https://github.com/remusao/mono/pull/111) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # v1.1.1 (Mon Apr 06 2020)
 
 #### :nail_care: Polish

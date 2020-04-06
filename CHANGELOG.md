@@ -1,5 +1,23 @@
 # (Mon Apr 06 2020)
 
+#### :nail_care: Polish
+
+- `@remusao/small@1.1.2`
+  - Add more aliases and plain txt mime [#111](https://github.com/remusao/mono/pull/111) ([@remusao](https://github.com/remusao))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump auto from 9.26.1 to 9.26.2 [#109](https://github.com/remusao/mono/pull/109) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
+# (Mon Apr 06 2020)
+
 #### :rocket: New Feature
 
 - `@remusao/guess-url-type@1.1.0`
