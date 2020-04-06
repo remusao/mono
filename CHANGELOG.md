@@ -1,5 +1,23 @@
 # (Mon Apr 06 2020)
 
+#### :nail_care: Polish
+
+- `@remusao/small@1.1.1`
+  - Remove avi resources as it is too big [#108](https://github.com/remusao/mono/pull/108) ([@remusao](https://github.com/remusao))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump @types/node from 13.9.7 to 13.9.8 [#91](https://github.com/remusao/mono/pull/91) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
+# (Mon Apr 06 2020)
+
 #### :bug: Bug Fix
 
 - `@remusao/auto-config@1.1.1`
