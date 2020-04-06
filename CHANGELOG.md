@@ -1,5 +1,18 @@
 # (Mon Apr 06 2020)
 
+#### :rocket: New Feature
+
+- `@remusao/guess-url-type@1.1.0`
+  - Add 'guess-url-type' package [#110](https://github.com/remusao/mono/pull/110) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
+# (Mon Apr 06 2020)
+
 #### :nail_care: Polish
 
 - `@remusao/small@1.1.1`
