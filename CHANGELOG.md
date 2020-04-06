@@ -1,3 +1,26 @@
+# (Mon Apr 06 2020)
+
+#### :bug: Bug Fix
+
+- `@remusao/auto-config@1.1.1`
+  - Fix auto deploy [#107](https://github.com/remusao/mono/pull/107) ([@remusao](https://github.com/remusao))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump auto from 9.26.0 to 9.26.1 [#106](https://github.com/remusao/mono/pull/106) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.25.4 to 9.26.0 [#105](https://github.com/remusao/mono/pull/105) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.25.2 to 9.25.4 [#104](https://github.com/remusao/mono/pull/104) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump ts-node from 8.8.1 to 8.8.2 [#103](https://github.com/remusao/mono/pull/103) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.25.1 to 9.25.2 [#102](https://github.com/remusao/mono/pull/102) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.25.0 to 9.25.1 [#101](https://github.com/remusao/mono/pull/101) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # (Fri Apr 03 2020)
 
 #### :rocket: New Feature
