@@ -1,52 +1,11 @@
-const STYLE_EXTENSIONS = new Set(['css', 'scss']);
+import { EXTENSIONS as DOCUMENT_EXTENSIONS } from './src/extensions/documents';
+import { EXTENSIONS as FONT_EXTENSIONS } from './src/extensions/fonts';
+import { EXTENSIONS as IMAGE_EXTENSIONS } from './src/extensions/images';
+import { EXTENSIONS as MEDIA_EXTENSIONS } from './src/extensions/medias';
+import { EXTENSIONS as SCRIPT_EXTENSIONS } from './src/extensions/scripts';
+import { EXTENSIONS as STYLE_EXTENSIONS } from './src/extensions/stylesheets';
 
-const IMAGE_EXTENSIONS = new Set([
-  'bmp',
-  'bmp',
-  'dib',
-  'eps',
-  'gif',
-  'heic',
-  'heif',
-  'ico',
-  'j2k',
-  'jfi',
-  'jfif',
-  'jif',
-  'jp2',
-  'jpe',
-  'jpeg',
-  'jpeg',
-  'jpf',
-  'jpg',
-  'jpg',
-  'jpm',
-  'jpx',
-  'mj2',
-  'png',
-  'svg',
-  'svgz',
-  'tif',
-  'tiff',
-  'webp',
-]);
-
-const MEDIA_EXTENSIONS = new Set([
-  'avi',
-  'flv',
-  'mp3',
-  'mp4',
-  'wav',
-  'weba',
-  'webm',
-  'wmv',
-]);
-
-const SCRIPT_EXTENSIONS = new Set(['js', 'ts', 'jsx', 'esm']);
-
-const DOCUMENT_EXTENSIONS = new Set(['htm', 'html', 'xhtml']);
-
-const FONT_EXTENSIONS = new Set(['woff', 'woff2', 'eot', 'ttf']);
+import { extname } from './src/extname';
 
 export type RequestType =
   | 'stylesheet'
@@ -56,40 +15,6 @@ export type RequestType =
   | 'media'
   | 'other'
   | 'script';
-
-function extname(url: string): string {
-  let endOfPath = url.length;
-
-  // Check for fragment
-  const indexOfFragment = url.indexOf('#');
-  if (indexOfFragment !== -1) {
-    endOfPath = indexOfFragment;
-  }
-
-  const indexOfQuery = url.indexOf('?');
-  if (indexOfQuery !== -1 && indexOfQuery < endOfPath) {
-    endOfPath = indexOfQuery;
-  }
-
-  let startOfExt = endOfPath - 1;
-  let code = 0;
-  for (; startOfExt >= 0; startOfExt -= 1) {
-    code = url.charCodeAt(startOfExt);
-    if (
-      ((code >= 65 && code <= 90) ||
-        (code >= 97 && code <= 122) ||
-        (code >= 48 && code <= 57)) === false
-    ) {
-      break;
-    }
-  }
-
-  if (code !== 46 || startOfExt < 0 || endOfPath - startOfExt >= 10) {
-    return '';
-  }
-
-  return url.slice(startOfExt + 1, endOfPath);
-}
 
 export default function getRequestType(url: string): RequestType {
   const ext = extname(url);
@@ -109,7 +34,7 @@ export default function getRequestType(url: string): RequestType {
     url.startsWith('data:audio/') ||
     url.startsWith('data:video/')
   ) {
-    return 'image';
+    return 'media';
   }
 
   // Stylesheets
@@ -120,9 +45,23 @@ export default function getRequestType(url: string): RequestType {
   // Scripts
   if (
     SCRIPT_EXTENSIONS.has(ext) ||
-    url.startsWith('data:application/javascript') ||
-    url.startsWith('data:text/javascript') ||
-    url.startsWith('data:application/x-javascript') ||
+    (url.startsWith('data:') &&
+      (url.startsWith('data:application/ecmascript') ||
+        url.startsWith('data:application/javascript') ||
+        url.startsWith('data:application/x-ecmascript') ||
+        url.startsWith('data:application/x-javascript') ||
+        url.startsWith('data:text/ecmascript') ||
+        url.startsWith('data:text/javascript') ||
+        url.startsWith('data:text/javascript1.0') ||
+        url.startsWith('data:text/javascript1.1') ||
+        url.startsWith('data:text/javascript1.2') ||
+        url.startsWith('data:text/javascript1.3') ||
+        url.startsWith('data:text/javascript1.4') ||
+        url.startsWith('data:text/javascript1.5') ||
+        url.startsWith('data:text/jscript') ||
+        url.startsWith('data:text/livescript') ||
+        url.startsWith('data:text/x-ecmascript') ||
+        url.startsWith('data:text/x-javascript'))) ||
     url.startsWith('https://maps.googleapis.com/maps/api/js') ||
     url.startsWith('https://www.googletagmanager.com/gtag/js')
   ) {
@@ -133,6 +72,7 @@ export default function getRequestType(url: string): RequestType {
   if (
     DOCUMENT_EXTENSIONS.has(ext) ||
     url.startsWith('data:text/html') ||
+    url.startsWith('data:application/xhtml') ||
     url.startsWith('https://www.youtube.com/embed/') ||
     url === 'https://www.google.ie/gen_204'
   ) {
