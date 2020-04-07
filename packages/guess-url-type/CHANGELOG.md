@@ -1,3 +1,15 @@
+# v1.1.2 (Tue Apr 07 2020)
+
+#### :nail_care: Polish
+
+- Fine-tune url type detection [#116](https://github.com/remusao/mono/pull/116) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # v1.1.1 (Tue Apr 07 2020)
 
 #### :bug: Bug Fix
