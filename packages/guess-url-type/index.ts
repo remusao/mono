@@ -74,7 +74,7 @@ export default function getRequestType(url: string): RequestType {
     url.startsWith('data:text/html') ||
     url.startsWith('data:application/xhtml') ||
     url.startsWith('https://www.youtube.com/embed/') ||
-    url === 'https://www.google.ie/gen_204'
+    url.startsWith('https://www.google.com/gen_204')
   ) {
     return 'document';
   }
