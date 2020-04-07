@@ -1,3 +1,27 @@
+# (Tue Apr 07 2020)
+
+#### :bug: Bug Fix
+
+- `@remusao/guess-url-type@1.1.1`
+  - Add tests and fix guess-url-type [#115](https://github.com/remusao/mono/pull/115) ([@remusao](https://github.com/remusao))
+
+#### :house: Internal
+
+- `@remusao/thunderbird-msg-filters@1.4.1`
+  - Extend auto config [#112](https://github.com/remusao/mono/pull/112) ([@remusao](https://github.com/remusao))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump auto from 9.26.3 to 9.26.4 [#114](https://github.com/remusao/mono/pull/114) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.26.2 to 9.26.3 [#113](https://github.com/remusao/mono/pull/113) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # (Mon Apr 06 2020)
 
 #### :nail_care: Polish

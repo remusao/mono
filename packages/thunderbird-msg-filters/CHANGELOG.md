@@ -1,3 +1,15 @@
+# v1.4.1 (Tue Apr 07 2020)
+
+#### :house: Internal
+
+- Extend auto config [#112](https://github.com/remusao/mono/pull/112) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # v1.4.0 (Wed Feb 12 2020)
 
 #### :running_woman: Performance
