@@ -1,3 +1,15 @@
+# v1.1.1 (Sat May 23 2020)
+
+#### :nail_care: Polish
+
+- badger: make sure update stops when badge is disabled [#172](https://github.com/remusao/mono/pull/172) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # v1.1.0 (Sat May 23 2020)
 
 #### :rocket: New Feature
