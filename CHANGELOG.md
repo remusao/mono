@@ -1,3 +1,74 @@
+# (Sat May 23 2020)
+
+#### :rocket: New Feature
+
+- `@remusao/badger@1.1.0`
+  - New package: @remusao/badger [#171](https://github.com/remusao/mono/pull/171) ([@remusao](https://github.com/remusao))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump mocha from 7.1.2 to 7.2.0 [#170](https://github.com/remusao/mono/pull/170) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.36.0 to 9.36.1 [#169](https://github.com/remusao/mono/pull/169) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.35.3 to 9.36.0 [#168](https://github.com/remusao/mono/pull/168) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.35.2 to 9.35.3 [#167](https://github.com/remusao/mono/pull/167) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.35.1 to 9.35.2 [#166](https://github.com/remusao/mono/pull/166) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.35.0 to 9.35.1 [#165](https://github.com/remusao/mono/pull/165) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.34.1 to 9.35.0 [#164](https://github.com/remusao/mono/pull/164) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 14.0.4 to 14.0.5 [#163](https://github.com/remusao/mono/pull/163) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 14.0.3 to 14.0.4 [#162](https://github.com/remusao/mono/pull/162) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump typescript from 3.9.2 to 3.9.3 [#161](https://github.com/remusao/mono/pull/161) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 14.0.1 to 14.0.3 [#160](https://github.com/remusao/mono/pull/160) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.33.2 to 9.34.1 [#159](https://github.com/remusao/mono/pull/159) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.32.3 to 9.33.2 [#158](https://github.com/remusao/mono/pull/158) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.32.2 to 9.32.3 [#157](https://github.com/remusao/mono/pull/157) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.32.1 to 9.32.2 [#156](https://github.com/remusao/mono/pull/156) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.32.0 to 9.32.1 [#155](https://github.com/remusao/mono/pull/155) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/benchmark from 1.0.32 to 1.0.33 [#154](https://github.com/remusao/mono/pull/154) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump lerna from 3.20.2 to 3.21.0 [#153](https://github.com/remusao/mono/pull/153) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 14.0.0 to 14.0.1 [#152](https://github.com/remusao/mono/pull/152) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump typescript from 3.8.3 to 3.9.2 [#150](https://github.com/remusao/mono/pull/150) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/benchmark from 1.0.31 to 1.0.32 [#149](https://github.com/remusao/mono/pull/149) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.31.1 to 9.32.0 [#148](https://github.com/remusao/mono/pull/148) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 13.13.4 to 13.13.5 [#147](https://github.com/remusao/mono/pull/147) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.30.5 to 9.31.1 [#146](https://github.com/remusao/mono/pull/146) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump ts-node from 8.9.1 to 8.10.1 [#145](https://github.com/remusao/mono/pull/145) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.30.4 to 9.30.5 [#143](https://github.com/remusao/mono/pull/143) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.30.3 to 9.30.4 [#142](https://github.com/remusao/mono/pull/142) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.30.2 to 9.30.3 [#141](https://github.com/remusao/mono/pull/141) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump tslint from 6.1.1 to 6.1.2 [#140](https://github.com/remusao/mono/pull/140) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 13.13.3 to 13.13.4 [#139](https://github.com/remusao/mono/pull/139) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 13.13.2 to 13.13.3 [#138](https://github.com/remusao/mono/pull/138) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump mocha from 7.1.1 to 7.1.2 [#137](https://github.com/remusao/mono/pull/137) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.30.1 to 9.30.2 [#136](https://github.com/remusao/mono/pull/136) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump ts-node from 8.9.0 to 8.9.1 [#135](https://github.com/remusao/mono/pull/135) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.30.0 to 9.30.1 [#134](https://github.com/remusao/mono/pull/134) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.29.0 to 9.30.0 [#133](https://github.com/remusao/mono/pull/133) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 13.13.1 to 13.13.2 [#132](https://github.com/remusao/mono/pull/132) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.28.3 to 9.29.0 [#131](https://github.com/remusao/mono/pull/131) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump ts-node from 8.8.2 to 8.9.0 [#130](https://github.com/remusao/mono/pull/130) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.28.0 to 9.28.3 [#129](https://github.com/remusao/mono/pull/129) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 13.13.0 to 13.13.1 [#128](https://github.com/remusao/mono/pull/128) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 13.11.1 to 13.13.0 [#127](https://github.com/remusao/mono/pull/127) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.27.3 to 9.28.0 [#126](https://github.com/remusao/mono/pull/126) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.27.2 to 9.27.3 [#125](https://github.com/remusao/mono/pull/125) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.27.1 to 9.27.2 [#124](https://github.com/remusao/mono/pull/124) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.27.0 to 9.27.1 [#123](https://github.com/remusao/mono/pull/123) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.26.8 to 9.27.0 [#122](https://github.com/remusao/mono/pull/122) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.26.7 to 9.26.8 [#121](https://github.com/remusao/mono/pull/121) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 13.11.0 to 13.11.1 [#120](https://github.com/remusao/mono/pull/120) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.26.6 to 9.26.7 [#119](https://github.com/remusao/mono/pull/119) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.26.5 to 9.26.6 [#118](https://github.com/remusao/mono/pull/118) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.26.4 to 9.26.5 [#117](https://github.com/remusao/mono/pull/117) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- `@remusao/thunderbird-msg-filters@1.5.0`
+  - Bump @types/node from 13.13.5 to 14.0.0 [#151](https://github.com/remusao/mono/pull/151) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # (Tue Apr 07 2020)
 
 #### :nail_care: Polish

@@ -1,3 +1,15 @@
+# v1.5.0 (Sat May 23 2020)
+
+#### :nut_and_bolt: Dependencies
+
+- Bump @types/node from 13.13.5 to 14.0.0 [#151](https://github.com/remusao/mono/pull/151) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v1.4.1 (Tue Apr 07 2020)
 
 #### :house: Internal
