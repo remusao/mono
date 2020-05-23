@@ -1,14 +1,16 @@
-import { browser } from 'webextension-polyfill-ts';
-
 async function getActiveTabId(): Promise<number> {
-  const tabs = await browser.tabs.query({ active: true });
-  if (tabs.length === 1) {
-    const { id } = tabs[0];
-    if (id !== undefined) {
-      return id;
-    }
-  }
-  return 0;
+  return new Promise((resolve) => {
+    chrome.tabs.query({ active: true }, (tabs) => {
+      if (tabs.length === 1) {
+        const { id } = tabs[0];
+        if (id !== undefined) {
+          resolve(id);
+          return;
+        }
+      }
+      resolve(0);
+    });
+  });
 }
 
 function sleep(timeout: number): Promise<void> {
@@ -65,13 +67,13 @@ export class Badge {
     this.minimumUpdateLatency = minimumUpdateLatency;
 
     // Whenever the active tab changes, then we update the count of blocked request
-    browser.tabs.onActivated.addListener(({ tabId }) => {
+    chrome.tabs.onActivated.addListener(({ tabId }) => {
       this.activeTabId = tabId;
       this.updateBadgeForTab(tabId);
     });
 
     // Reset counter if tab is reloaded
-    browser.webNavigation.onBeforeNavigate.addListener(({ tabId, frameId }) => {
+    chrome.webNavigation.onBeforeNavigate.addListener(({ tabId, frameId }) => {
       if (frameId === 0) {
         this.reset(tabId);
       }
@@ -82,8 +84,11 @@ export class Badge {
     });
 
     // Initialize badge text and background colors
-    browser.browserAction.setBadgeTextColor?.({ color: this.badgeTextColor });
-    browser.browserAction.setBadgeBackgroundColor({
+    if (typeof browser !== 'undefined') { // Firefox-only
+      browser.browserAction.setBadgeTextColor({ color: this.badgeTextColor });
+    }
+
+    chrome.browserAction.setBadgeBackgroundColor({
       color: this.badgeBackgroundColor,
     });
   }
@@ -96,22 +101,22 @@ export class Badge {
   public reset(tabId: number): void {
     this.counter.delete(tabId);
     if (this.enabled === true) {
-      browser.browserAction.setBadgeText({ text: '0' });
+      chrome.browserAction.setBadgeText({ text: '0' });
     }
   }
 
   public disable(): void {
     this.enabled = false;
     this.counter.clear();
-    browser.browserAction.setBadgeText({ text: '' });
-    browser.browserAction.setIcon({ path: this.iconDisabled });
+    chrome.browserAction.setBadgeText({ text: '' });
+    chrome.browserAction.setIcon({ path: this.iconDisabled });
   }
 
   public enable(): void {
     this.enabled = true;
-    browser.browserAction.enable();
-    browser.browserAction.setIcon({ path: this.getFirstEnabledIconFrame() });
-    browser.browserAction.setBadgeText({ text: '0' });
+    chrome.browserAction.enable();
+    chrome.browserAction.setIcon({ path: this.getFirstEnabledIconFrame() });
+    chrome.browserAction.setBadgeText({ text: '0' });
   }
 
   private getFirstEnabledIconFrame(): string {
@@ -124,7 +129,7 @@ export class Badge {
 
   private async updateBadgeForTab(tabId: number): Promise<void> {
     if (this.enabled === true) {
-      await browser.browserAction.setBadgeText({
+      await chrome.browserAction.setBadgeText({
         text: '' + (this.counter.get(tabId) || 0),
       });
     }
@@ -144,7 +149,7 @@ export class Badge {
           }
           await Promise.all([
             this.updateBadgeForTab(this.activeTabId),
-            browser.browserAction.setIcon({
+            chrome.browserAction.setIcon({
               path: this.iconEnabled[i % this.iconEnabled.length],
             }),
           ]);

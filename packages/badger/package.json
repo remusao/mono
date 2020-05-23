@@ -33,7 +33,8 @@
     "url": "https://github.com/remusao/mono/issues"
   },
   "dependencies": {
-    "webextension-polyfill-ts": "^0.15.0"
+    "@types/chrome": "^0.0.114",
+    "@types/firefox-webext-browser": "^70.0.1"
   },
   "devDependencies": {
     "@types/chai": "^4.2.8",
