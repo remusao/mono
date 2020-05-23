@@ -2,6 +2,19 @@
 
 #### :nail_care: Polish
 
+- `@remusao/badger@1.1.2`
+  - badger: remove need for polyfill [#173](https://github.com/remusao/mono/pull/173) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
+# (Sat May 23 2020)
+
+#### :nail_care: Polish
+
 - `@remusao/badger@1.1.1`
   - badger: make sure update stops when badge is disabled [#172](https://github.com/remusao/mono/pull/172) ([@remusao](https://github.com/remusao))
 
