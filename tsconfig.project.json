@@ -27,6 +27,9 @@
     },
     {
       "path": "./packages/guess-url-type/tsconfig.json"
+    },
+    {
+      "path": "./packages/badger/tsconfig.json"
     }
   ]
 }
