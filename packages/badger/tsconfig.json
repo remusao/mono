@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist/cjs",
+    "declarationDir": "dist/types"
+  },
+  "files": [
+    "./index.ts",
+    "./index.test.ts"
+  ]
+}
