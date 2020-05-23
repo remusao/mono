@@ -1,7 +1,7 @@
 {
   "name": "@remusao/smaz-benchmarks",
   "private": true,
-  "version": "1.9.1",
+  "version": "1.10.0",
   "description": "Benchmark various small string compression libraries",
   "author": "Rémi Berson <remi@cliqz.com>",
   "homepage": "https://github.com/remusao/mono#readme",
