@@ -131,10 +131,6 @@ export class Badge {
   }
 
   private async startUpdatingBadge(): Promise<void> {
-    if (this.enabled === false) {
-      return; // Badge is disabled
-    }
-
     if (this.lock === true) {
       return; // Already updating
     }
@@ -143,6 +139,9 @@ export class Badge {
     try {
       if (Array.isArray(this.iconEnabled)) {
         for (let i = 1; i <= this.iconEnabled.length; i += 1) {
+          if (this.enabled === false) {
+            break;
+          }
           await Promise.all([
             this.updateBadgeForTab(this.activeTabId),
             browser.browserAction.setIcon({
@@ -151,7 +150,7 @@ export class Badge {
           ]);
           await sleep(this.minimumUpdateLatency);
         }
-      } else {
+      } else if (this.enabled === true) {
         await this.updateBadgeForTab(this.activeTabId);
         await sleep(this.minimumUpdateLatency);
       }
