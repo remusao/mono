@@ -5,7 +5,7 @@
 ## Usage
 
 ```javascript
-const { Badger } = require('@remusao/badger');
+const { Badge } = require('@remusao/badger');
 
 const badge = new Badge({
   // Optionally customize badge text and background colors.
