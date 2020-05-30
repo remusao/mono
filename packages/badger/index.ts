@@ -95,7 +95,11 @@ export class Badge {
 
   public incr(tabId: number): void {
     this.counter.set(tabId, (this.counter.get(tabId) || 0) + 1);
-    this.startUpdatingBadge();
+
+    // Only start animation if increment happened on currently active tab
+    if (tabId === this.activeTabId) {
+      this.startUpdatingBadge();
+    }
   }
 
   public reset(tabId: number): void {
