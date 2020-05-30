@@ -1,3 +1,15 @@
+# v1.1.3 (Sat May 30 2020)
+
+#### :nail_care: Polish
+
+- Badge rotation should only trigger if tab is active [#181](https://github.com/remusao/mono/pull/181) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # v1.1.2 (Sat May 23 2020)
 
 #### :nail_care: Polish

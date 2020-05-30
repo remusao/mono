@@ -1,3 +1,27 @@
+# (Sat May 30 2020)
+
+#### :nail_care: Polish
+
+- `@remusao/badger@1.1.3`
+  - Badge rotation should only trigger if tab is active [#181](https://github.com/remusao/mono/pull/181) ([@remusao](https://github.com/remusao))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump @types/node from 14.0.5 to 14.0.6 [#180](https://github.com/remusao/mono/pull/180) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.36.4 to 9.37.0 [#179](https://github.com/remusao/mono/pull/179) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.36.3 to 9.36.4 [#178](https://github.com/remusao/mono/pull/178) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.36.2 to 9.36.3 [#177](https://github.com/remusao/mono/pull/177) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump ts-node from 8.10.1 to 8.10.2 [#176](https://github.com/remusao/mono/pull/176) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump lerna from 3.21.0 to 3.22.0 [#175](https://github.com/remusao/mono/pull/175) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.36.1 to 9.36.2 [#174](https://github.com/remusao/mono/pull/174) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # (Sat May 23 2020)
 
 #### :nail_care: Polish
