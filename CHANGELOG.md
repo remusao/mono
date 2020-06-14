@@ -1,3 +1,35 @@
+# (Sun Jun 14 2020)
+
+#### :rocket: New Feature
+
+- `@remusao/badger@1.2.0`, `@remusao/bench@1.1.0`, `@remusao/url-match-patterns@1.1.0`
+  - New url-match-patterns package [#196](https://github.com/remusao/mono/pull/196) ([@remusao](https://github.com/remusao))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump @types/node from 14.0.12 to 14.0.13 [#194](https://github.com/remusao/mono/pull/194) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump chalk from 4.0.0 to 4.1.0 [#193](https://github.com/remusao/mono/pull/193) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump lerna from 3.22.0 to 3.22.1 [#192](https://github.com/remusao/mono/pull/192) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 14.0.11 to 14.0.12 [#191](https://github.com/remusao/mono/pull/191) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.38.2 to 9.39.0 [#190](https://github.com/remusao/mono/pull/190) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 14.0.10 to 14.0.11 [#189](https://github.com/remusao/mono/pull/189) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump typescript from 3.9.3 to 3.9.5 [#188](https://github.com/remusao/mono/pull/188) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 14.0.9 to 14.0.10 [#187](https://github.com/remusao/mono/pull/187) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.38.1 to 9.38.2 [#186](https://github.com/remusao/mono/pull/186) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.38.0 to 9.38.1 [#185](https://github.com/remusao/mono/pull/185) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 14.0.6 to 14.0.9 [#184](https://github.com/remusao/mono/pull/184) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump nyc from 15.0.1 to 15.1.0 [#183](https://github.com/remusao/mono/pull/183) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.37.0 to 9.38.0 [#182](https://github.com/remusao/mono/pull/182) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- `@remusao/badger@1.2.0`, `@remusao/counter@1.3.0`, `@remusao/guess-url-type@1.2.0`, `@remusao/small@1.2.0`, `@remusao/smaz-compress@1.9.0`, `@remusao/smaz-decompress@1.9.0`, `@remusao/smaz-generate@1.9.0`, `@remusao/smaz@1.9.0`, `@remusao/thunderbird-msg-filters@1.6.0`, `@remusao/trie@1.4.0`
+  - Bump mocha from 7.2.0 to 8.0.1 [#195](https://github.com/remusao/mono/pull/195) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # (Sat May 30 2020)
 
 #### :nail_care: Polish

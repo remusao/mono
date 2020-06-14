@@ -1,3 +1,20 @@
+# v1.2.0 (Sun Jun 14 2020)
+
+#### :rocket: New Feature
+
+- New url-match-patterns package [#196](https://github.com/remusao/mono/pull/196) ([@remusao](https://github.com/remusao))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump mocha from 7.2.0 to 8.0.1 [#195](https://github.com/remusao/mono/pull/195) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # v1.1.3 (Sat May 30 2020)
 
 #### :nail_care: Polish

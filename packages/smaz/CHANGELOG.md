@@ -1,3 +1,15 @@
+# v1.9.0 (Sun Jun 14 2020)
+
+#### :nut_and_bolt: Dependencies
+
+- Bump mocha from 7.2.0 to 8.0.1 [#195](https://github.com/remusao/mono/pull/195) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v1.8.0 (Wed Feb 12 2020)
 
 #### :running_woman: Performance
