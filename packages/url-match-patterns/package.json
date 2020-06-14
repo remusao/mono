@@ -1,6 +1,6 @@
 {
   "name": "@remusao/url-match-patterns",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Test URLs against match patterns",
   "author": "Rémi Berson <remi@cliqz.com>",
   "homepage": "https://github.com/remusao/mono#readme",
@@ -33,7 +33,7 @@
     "url": "https://github.com/remusao/mono/issues"
   },
   "devDependencies": {
-    "@remusao/bench": "^1.0.0",
+    "@remusao/bench": "^1.1.0",
     "@types/chai": "^4.2.8",
     "@types/mocha": "^7.0.1",
     "chai": "^4.2.0",
