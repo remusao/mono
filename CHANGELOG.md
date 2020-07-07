@@ -1,3 +1,28 @@
+# (Tue Jul 07 2020)
+
+#### ⚠️ Pushed to `master`
+
+- Bump auto from 9.40.6 to 9.41.1 ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump auto from 9.40.4 to 9.40.6 [#204](https://github.com/remusao/mono/pull/204) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump typescript from 3.9.5 to 3.9.6 [#203](https://github.com/remusao/mono/pull/203) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump auto from 9.39.0 to 9.40.4 [#200](https://github.com/remusao/mono/pull/200) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/node from 14.0.13 to 14.0.14 [#198](https://github.com/remusao/mono/pull/198) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- `@remusao/badger@1.2.1`
+  - Bump @types/firefox-webext-browser from 70.0.1 to 78.0.0 [#201](https://github.com/remusao/mono/pull/201) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- `@remusao/badger@1.2.1`
+  - Bump @types/chrome from 0.0.116 to 0.0.117 [#199](https://github.com/remusao/mono/pull/199) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- `@remusao/badger@1.2.1`
+  - Bump @types/chrome from 0.0.115 to 0.0.116 [#197](https://github.com/remusao/mono/pull/197) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # (Sun Jun 14 2020)
 
 #### :rocket: New Feature

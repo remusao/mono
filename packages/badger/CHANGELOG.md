@@ -1,3 +1,17 @@
+# v1.2.1 (Tue Jul 07 2020)
+
+#### :nut_and_bolt: Dependencies
+
+- Bump @types/firefox-webext-browser from 70.0.1 to 78.0.0 [#201](https://github.com/remusao/mono/pull/201) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chrome from 0.0.116 to 0.0.117 [#199](https://github.com/remusao/mono/pull/199) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chrome from 0.0.115 to 0.0.116 [#197](https://github.com/remusao/mono/pull/197) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v1.2.0 (Sun Jun 14 2020)
 
 #### :rocket: New Feature
