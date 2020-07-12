@@ -39,7 +39,7 @@
   "devDependencies": {
     "@remusao/smaz": "^1.9.0",
     "@types/chai": "^4.2.8",
-    "@types/mocha": "^7.0.1",
+    "@types/mocha": "^8.0.0",
     "chai": "^4.2.0",
     "mocha": "^8.0.1",
     "nyc": "^15.0.0",
