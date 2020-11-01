@@ -33,7 +33,7 @@
     "url": "https://github.com/remusao/mono/issues"
   },
   "devDependencies": {
-    "@types/benchmark": "^1.0.33",
+    "@types/benchmark": "^2.1.0",
     "@types/chai": "^4.2.8",
     "@types/mocha": "^8.0.0",
     "chai": "^4.2.0",
