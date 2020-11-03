@@ -1,3 +1,25 @@
+# v1.2.2 (Tue Nov 03 2020)
+
+#### :nut_and_bolt: Dependencies
+
+- Bump @types/chrome from 0.0.125 to 0.0.126 [#302](https://github.com/remusao/mono/pull/302) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chrome from 0.0.124 to 0.0.125 [#291](https://github.com/remusao/mono/pull/291) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chrome from 0.0.123 to 0.0.124 [#277](https://github.com/remusao/mono/pull/277) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chrome from 0.0.122 to 0.0.123 [#271](https://github.com/remusao/mono/pull/271) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump typescript from 3.9.7 to 4.0.2 [#257](https://github.com/remusao/mono/pull/257) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chrome from 0.0.121 to 0.0.122 [#229](https://github.com/remusao/mono/pull/229) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chrome from 0.0.120 to 0.0.121 [#225](https://github.com/remusao/mono/pull/225) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/mocha from 7.0.2 to 8.0.0 [#218](https://github.com/remusao/mono/pull/218) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chrome from 0.0.119 to 0.0.120 [#215](https://github.com/remusao/mono/pull/215) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chrome from 0.0.118 to 0.0.119 [#209](https://github.com/remusao/mono/pull/209) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/chrome from 0.0.117 to 0.0.118 [#207](https://github.com/remusao/mono/pull/207) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v1.2.1 (Tue Jul 07 2020)
 
 #### :nut_and_bolt: Dependencies

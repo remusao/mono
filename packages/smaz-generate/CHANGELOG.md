@@ -1,3 +1,16 @@
+# v1.9.1 (Tue Nov 03 2020)
+
+#### :nut_and_bolt: Dependencies
+
+- Bump typescript from 3.9.7 to 4.0.2 [#257](https://github.com/remusao/mono/pull/257) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump @types/mocha from 7.0.2 to 8.0.0 [#218](https://github.com/remusao/mono/pull/218) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v1.9.0 (Sun Jun 14 2020)
 
 #### :nut_and_bolt: Dependencies

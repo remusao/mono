@@ -1,3 +1,19 @@
+# v1.1.2 (Tue Nov 03 2020)
+
+#### :bug: Bug Fix
+
+- Revert: Disable npm plugin for auto (too many packages published) [#309](https://github.com/remusao/mono/pull/309) ([@remusao](https://github.com/remusao))
+
+#### :nail_care: Polish
+
+- Disable npm plugin for auto (too many packages published) [#308](https://github.com/remusao/mono/pull/308) ([@remusao](https://github.com/remusao))
+
+#### Authors: 1
+
+- Rémi ([@remusao](https://github.com/remusao))
+
+---
+
 # v1.1.1 (Mon Apr 06 2020)
 
 #### :bug: Bug Fix
