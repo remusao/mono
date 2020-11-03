@@ -1,6 +1,6 @@
 {
   "name": "@remusao/guess-url-type",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Guess type of resource based on its URL",
   "author": "Rémi Berson <remi@cliqz.com>",
   "homepage": "https://github.com/remusao/mono#readme",
