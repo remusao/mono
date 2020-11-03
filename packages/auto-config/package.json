@@ -25,7 +25,7 @@
     "auto": "*"
   },
   "auto": {
-    "plugins": [],
+    "plugins": ["npm"],
     "labels": [
       {
         "name": "PR: Breaking Change :boom:",
