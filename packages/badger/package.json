@@ -33,7 +33,7 @@
     "url": "https://github.com/remusao/mono/issues"
   },
   "dependencies": {
-    "@types/chrome": "^0.0.145",
+    "@types/chrome": "^0.0.169",
     "@types/firefox-webext-browser": "^82.0.0"
   },
   "devDependencies": {
