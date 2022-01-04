@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@types/chrome": "^0.0.145",
-    "@types/firefox-webext-browser": "^82.0.0"
+    "@types/firefox-webext-browser": "^94.0.1"
   },
   "devDependencies": {
     "@types/chai": "^4.2.8",
