@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@types/benchmark": "^2.1.0",
-    "@types/node": "^14.0.0",
+    "@types/node": "^17.0.8",
     "rimraf": "^3.0.0",
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
