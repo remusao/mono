@@ -35,7 +35,7 @@
   "devDependencies": {
     "@remusao/bench": "^1.1.1",
     "@types/chai": "^4.2.8",
-    "@types/mocha": "^8.0.0",
+    "@types/mocha": "^9.1.0",
     "chai": "^4.2.0",
     "match-url-wildcard": "0.0.4",
     "mocha": "^9.0.0",
