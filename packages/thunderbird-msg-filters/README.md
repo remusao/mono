@@ -1,4 +1,4 @@
-# `@remusao/thunderbird-msg-fitlers`
+# `@remusao/thunderbird-msg-filters`
 
 > Parse and pretty-print Thunderbird message filters files (msgFilterRules.dat)
 
