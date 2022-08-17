@@ -25,7 +25,7 @@
   "devDependencies": {
     "@remusao/auto-config": "^1.1.1",
     "auto": "^10.0.2",
-    "lerna": "^4.0.0"
+    "lerna": "^5.4.3"
   },
   "prettier": {
     "singleQuote": true,
