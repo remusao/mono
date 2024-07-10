@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import { compress, decompress, getCompressedSize } from './index';
+import { compress, decompress, getCompressedSize } from '../src/index.js';
 
 describe('@remusao/smaz', () => {
   [

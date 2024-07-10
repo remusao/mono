@@ -1,13 +1,7 @@
 {
-  "extends": "../../tsconfig",
-  "compilerOptions": {
-    "composite": true,
-    "outDir": "dist/cjs",
-    "declarationDir": "dist/types"
-  },
+  "extends": "../../tsconfig.json",
   "include": [
-    "index.ts",
-    "cli.ts",
-    "index.test.ts"
+    "./test/**/*.ts",
+    "./src/**/*.ts"
   ]
 }

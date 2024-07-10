@@ -1,3 +1,6 @@
 node_modules
 dist
 .nyc_output
+.tshy
+.tshy-build
+.yarn

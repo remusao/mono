@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import { create, lookup } from './index';
+import { create, lookup } from '../src/index.js';
 
 describe('@remusao/trie', () => {
   describe('#create', () => {

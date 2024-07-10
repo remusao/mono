@@ -4,13 +4,13 @@
     "declarationMap": true,
     "sourceMap": true,
     "target": "es2017",
-    "module": "commonjs",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true
   }

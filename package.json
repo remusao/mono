@@ -14,9 +14,7 @@
   "scripts": {
     "bootstrap": "yarn install --frozen-lock && lerna bootstrap",
     "lint": "lerna run --parallel lint",
-    "watch": "tsc --build ./tsconfig.project.json --watch",
-    "build": "tsc --build ./tsconfig.project.json",
-    "bundle": "lerna run bundle",
+    "build": "lerna run build",
     "test": "lerna run --concurrency 1 test",
     "pretest": "yarn build",
     "clean": "lerna run --parallel clean && lerna clean --yes",
@@ -25,7 +23,8 @@
   "devDependencies": {
     "@remusao/auto-config": "^1.1.1",
     "auto": "^10.0.2",
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "typescript": "5.5.2"
   },
   "prettier": {
     "singleQuote": true,
@@ -36,5 +35,6 @@
     "extends": "@remusao/auto-config",
     "name": "Rémi Berson",
     "email": "remi@cliqz.com"
-  }
+  },
+  "packageManager": "yarn@4.2.2"
 }

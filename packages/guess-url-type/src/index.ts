@@ -1,11 +1,11 @@
-import { EXTENSIONS as DOCUMENT_EXTENSIONS } from './src/extensions/documents';
-import { EXTENSIONS as FONT_EXTENSIONS } from './src/extensions/fonts';
-import { EXTENSIONS as IMAGE_EXTENSIONS } from './src/extensions/images';
-import { EXTENSIONS as MEDIA_EXTENSIONS } from './src/extensions/medias';
-import { EXTENSIONS as SCRIPT_EXTENSIONS } from './src/extensions/scripts';
-import { EXTENSIONS as STYLE_EXTENSIONS } from './src/extensions/stylesheets';
+import { EXTENSIONS as DOCUMENT_EXTENSIONS } from './extensions/documents.js';
+import { EXTENSIONS as FONT_EXTENSIONS } from './extensions/fonts.js';
+import { EXTENSIONS as IMAGE_EXTENSIONS } from './extensions/images.js';
+import { EXTENSIONS as MEDIA_EXTENSIONS } from './extensions/medias.js';
+import { EXTENSIONS as SCRIPT_EXTENSIONS } from './extensions/scripts.js';
+import { EXTENSIONS as STYLE_EXTENSIONS } from './extensions/stylesheets.js';
 
-import { extname } from './src/extname';
+import { extname } from './extname.js';
 
 export type RequestType =
   | 'stylesheet'

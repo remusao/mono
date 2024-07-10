@@ -1,16 +1,16 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import { EXTENSIONS as DOCUMENT_EXTENSIONS } from '../src/extensions/documents';
-import { EXTENSIONS as FONT_EXTENSIONS } from '../src/extensions/fonts';
-import { EXTENSIONS as IMAGE_EXTENSIONS } from '../src/extensions/images';
-import { EXTENSIONS as MEDIA_EXTENSIONS } from '../src/extensions/medias';
-import { EXTENSIONS as SCRIPT_EXTENSIONS } from '../src/extensions/scripts';
-import { EXTENSIONS as STYLE_EXTENSIONS } from '../src/extensions/stylesheets';
+import { EXTENSIONS as DOCUMENT_EXTENSIONS } from '../src/extensions/documents.js';
+import { EXTENSIONS as FONT_EXTENSIONS } from '../src/extensions/fonts.js';
+import { EXTENSIONS as IMAGE_EXTENSIONS } from '../src/extensions/images.js';
+import { EXTENSIONS as MEDIA_EXTENSIONS } from '../src/extensions/medias.js';
+import { EXTENSIONS as SCRIPT_EXTENSIONS } from '../src/extensions/scripts.js';
+import { EXTENSIONS as STYLE_EXTENSIONS } from '../src/extensions/stylesheets.js';
 
-import { extname } from '../src/extname';
+import { extname } from '../src/extname.js';
 
-import guessRequestType from '../index';
+import guessRequestType from '../src/index.js';
 
 describe('@remusao/guess-url-type', () => {
   describe ('#extname', () => {

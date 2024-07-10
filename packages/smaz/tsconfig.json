@@ -1,16 +1,14 @@
 {
-  "extends": "../../tsconfig",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "composite": true,
-    "outDir": "dist/cjs",
-    "declarationDir": "dist/types"
   },
   "references": [
     { "path": "../smaz-compress/tsconfig.json" },
     { "path": "../smaz-decompress/tsconfig.json" }
   ],
-  "files": [
-    "./index.ts",
-    "./index.test.ts"
+  "include": [
+    "./test/**/*.ts",
+    "./src/**/*.ts"
   ]
 }

@@ -2,7 +2,7 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 import bench from '@remusao/bench';
 
-import { Pattern } from '../index';
+import { Pattern } from '../src/index';
 
 // @ts-ignore
 import match from 'url-match-patterns';

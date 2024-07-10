@@ -1,20 +1,20 @@
-import flv from './src/flv';
-import gif from './src/gif';
-import html from './src/html';
-import ico from './src/ico';
-import jpg from './src/jpeg';
-import js from './src/javascript';
-import json from './src/json';
-import mp3 from './src/mp3';
-import mp4 from './src/mp4';
-import pdf from './src/pdf';
-import png from './src/png';
-import svg from './src/svg';
-import txt from './src/txt';
-import wav from './src/wav';
-import webm from './src/webm';
-import webp from './src/webp';
-import wmv from './src/wmv';
+import flv from './flv.js';
+import gif from './gif.js';
+import html from './html.js';
+import ico from './ico.js';
+import jpg from './jpeg.js';
+import js from './javascript.js';
+import json from './json.js';
+import mp3 from './mp3.js';
+import mp4 from './mp4.js';
+import pdf from './pdf.js';
+import png from './png.js';
+import svg from './svg.js';
+import txt from './txt.js';
+import wav from './wav.js';
+import webm from './webm.js';
+import webp from './webp.js';
+import wmv from './wmv.js';
 
 // List of mime types:
 // - [ ] .aac 	AAC audio 	audio/aac
