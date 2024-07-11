@@ -12,12 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Prepare repository
-        run: |
-          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
-          git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
-          git fetch --prune --unshallow
-
       - name: Enable Corepack
         run: corepack enable
 
@@ -37,10 +31,11 @@ jobs:
       - name: Lint
         run: yarn lint
 
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
       - name: Create release
         run: |
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-          yarn release
+          yarn auto shipit -vv
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
