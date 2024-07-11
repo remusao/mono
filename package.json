@@ -17,8 +17,7 @@
     "build": "lerna run build",
     "test": "lerna run --concurrency 1 test",
     "pretest": "yarn build",
-    "clean": "lerna run --parallel clean && lerna clean --yes",
-    "release": "auto shipit"
+    "clean": "lerna run --parallel clean && lerna clean --yes"
   },
   "devDependencies": {
     "@remusao/auto-config": "^1.1.1",
