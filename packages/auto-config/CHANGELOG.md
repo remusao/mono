@@ -1,3 +1,23 @@
+# v1.2.0 (Thu Jul 11 2024)
+
+#### :rocket: New Feature
+
+- Modernize codebase [#835](https://github.com/remusao/mono/pull/835) ([@chrmod](https://github.com/chrmod))
+
+#### :bug: Bug Fix
+
+- CI: fix publishing [#838](https://github.com/remusao/mono/pull/838) ([@chrmod](https://github.com/chrmod))
+
+#### ⚠️ Pushed to `master`
+
+- CI: another publishing fix ([@chrmod](https://github.com/chrmod))
+
+#### Authors: 1
+
+- Krzysztof Modras ([@chrmod](https://github.com/chrmod))
+
+---
+
 # v1.1.2 (Tue Nov 03 2020)
 
 #### :bug: Bug Fix

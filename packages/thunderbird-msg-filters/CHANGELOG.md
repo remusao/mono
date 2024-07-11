@@ -1,3 +1,32 @@
+# v1.7.0 (Thu Jul 11 2024)
+
+#### :rocket: New Feature
+
+- Modernize codebase [#835](https://github.com/remusao/mono/pull/835) ([@chrmod](https://github.com/chrmod))
+
+#### :bug: Bug Fix
+
+- CI: fix publishing [#838](https://github.com/remusao/mono/pull/838) ([@chrmod](https://github.com/chrmod))
+
+#### :memo: Documentation
+
+- Typo [#562](https://github.com/remusao/mono/pull/562) ([@m1dnight](https://github.com/m1dnight))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump @types/node from 14.14.35 to 17.0.40 [#681](https://github.com/remusao/mono/pull/681) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump @types/mocha from 8.2.2 to 9.1.1 [#655](https://github.com/remusao/mono/pull/655) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump mocha from 8.4.0 to 9.0.0 [#476](https://github.com/remusao/mono/pull/476) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 4
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Christophe De Troyer ([@m1dnight](https://github.com/m1dnight))
+- Krzysztof Modras ([@chrmod](https://github.com/chrmod))
+
+---
+
 # v1.6.1 (Tue Nov 03 2020)
 
 #### :nut_and_bolt: Dependencies

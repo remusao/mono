@@ -1,3 +1,26 @@
+# v1.4.0 (Thu Jul 11 2024)
+
+#### :rocket: New Feature
+
+- Modernize codebase [#835](https://github.com/remusao/mono/pull/835) ([@chrmod](https://github.com/chrmod))
+
+#### :bug: Bug Fix
+
+- CI: fix publishing [#838](https://github.com/remusao/mono/pull/838) ([@chrmod](https://github.com/chrmod))
+
+#### :nut_and_bolt: Dependencies
+
+- Bump @types/mocha from 8.2.2 to 9.1.1 [#655](https://github.com/remusao/mono/pull/655) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump mocha from 8.4.0 to 9.0.0 [#476](https://github.com/remusao/mono/pull/476) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 3
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Krzysztof Modras ([@chrmod](https://github.com/chrmod))
+
+---
+
 # v1.3.1 (Tue Nov 03 2020)
 
 #### :nut_and_bolt: Dependencies
