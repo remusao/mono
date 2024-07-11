@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@remusao/auto-config": "^1.1.1",
-    "auto": "^10.0.2",
+    "auto": "^11.1.6",
     "lerna": "^4.0.0",
     "typescript": "5.5.2"
   },
