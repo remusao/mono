@@ -18,6 +18,7 @@
   ],
   "bin": "bin/cli.js",
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "scripts": {
