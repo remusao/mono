@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import match from '../index';
+import match from '../src/index.js';
 
 describe('@remusao/url-match-patterns', () => {
   [

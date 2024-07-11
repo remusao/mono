@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import bench from '../index';
+import bench from '../src/index.js';
 
 it('@remusao/bench', () => {
   const inputs: string[] = ['foo', 'bar', 'baz'];

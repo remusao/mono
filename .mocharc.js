@@ -6,4 +6,8 @@ module.exports = {
   color: false,
   extension: ['ts'],
   recursive: true,
+  'node-option': [
+    'experimental-specifier-resolution=node',
+    'loader=ts-node/esm',
+  ]
 };
