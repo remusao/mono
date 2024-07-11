@@ -102,8 +102,5 @@
         "color": "#5dbdcc"
       }
     ]
-  },
-  "dependencies": {
-    "typescript": "5.5.2"
   }
 }
