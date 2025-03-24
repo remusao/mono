@@ -3,13 +3,17 @@ import { Trie, create } from '@remusao/trie';
 const EMPTY_UINT8_ARRAY = new Uint8Array(0);
 
 export class SmazCompress {
-  private readonly buffer: Uint8Array;
+  private buffer: Uint8Array;
   private readonly trie: Trie;
   private readonly verbatim: Uint8Array;
 
   constructor(codebook: readonly string[], maxSize = 30000) {
     this.trie = create(codebook);
-    this.buffer = new Uint8Array(maxSize);
+    if (maxSize <= 0) {
+      this.buffer = EMPTY_UINT8_ARRAY;
+    } else {
+      this.buffer = new Uint8Array(maxSize);
+    }
     this.verbatim = new Uint8Array(255);
   }
 
@@ -73,6 +77,11 @@ export class SmazCompress {
     let verbatimIndex = 0;
     let inputIndex = 0;
     const len = str.length;
+    const isBufferEmpty = this.buffer === EMPTY_UINT8_ARRAY;
+
+    if (isBufferEmpty) {
+      this.buffer = new Uint8Array(this.getCompressedSize(str));
+    }
 
     while (inputIndex < str.length) {
       let indexAfterMatch = -1;
@@ -111,7 +120,13 @@ export class SmazCompress {
       bufferIndex = this.flushVerbatim(verbatimIndex, bufferIndex);
     }
 
-    return this.buffer.slice(0, bufferIndex);
+    const out = this.buffer.slice(0, bufferIndex);
+
+    if (isBufferEmpty) {
+      this.buffer = EMPTY_UINT8_ARRAY;
+    }
+
+    return out;
   }
 
   private flushVerbatim(verbatimIndex: number, bufferIndex: number): number {
