@@ -27,4 +27,17 @@ describe('@remusao/smaz', () => {
       expect(decompress(compressed)).to.equal(str);
     });
   });
+
+  [
+    '한글',
+    '日本語',
+    '中華料理'
+  ].forEach(str => {
+    it(str, () => {
+      const encoded = new TextEncoder().encode(str);
+      const compressed = compress(encoded);
+      expect(compressed).to.have.length(getCompressedSize(encoded));
+      expect(decompress(compressed)).to.equal(str);
+    })
+  })
 });
