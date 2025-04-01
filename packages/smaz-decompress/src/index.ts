@@ -15,9 +15,9 @@ export class SmazDecompress {
         i += 2;
       } else if (arr[i] === 255) {
         const stop = i + arr[i + 1] + 2;
-        output += new TextDecoder('utf8', { ignoreBOM: true })
-          .decode(arr.slice(i + 2, stop));
-        i = stop;
+        for (i += 2; i < stop; i += 1) {
+          output += String.fromCharCode(arr[i]);
+        }
       } else {
         output += this.codebook[arr[i]];
         i += 1;
