@@ -1,3 +1,15 @@
+# (Wed Apr 02 2025)
+
+#### :bug: Bug Fix
+
+- fix(smaz-benchmarks): fix compatibility with node-gyp and cjs [#842](https://github.com/remusao/mono/pull/842) ([@seia-soto](https://github.com/seia-soto))
+
+#### Authors: 1
+
+- HoJeong Go ([@seia-soto](https://github.com/seia-soto))
+
+---
+
 # (Thu Jul 11 2024)
 
 #### :rocket: New Feature
