@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import { SmazDecompress } from '../src/index.js';
+import { SmazDecompress, SmazDecompressRaw } from '../src/index.js';
 
 describe('@remusao/smaz-compress', () => {
   it('decompresses empty array', () => {
@@ -53,5 +53,20 @@ describe('@remusao/smaz-compress', () => {
         ]),
       ),
     ).to.equal('bfoobazbar');
+  });
+
+  it('decompresses a utf8 container', () => {
+    const smaz = SmazDecompressRaw.fromStringCodebook(['foo']);
+    const text = '한글'
+    const utf8 = new TextEncoder().encode(text);
+    const decompressed = smaz.decompress(
+      new Uint8Array([
+        255,
+        utf8.byteLength,
+        ...utf8,
+        0, // 'foo'
+      ]),
+    );
+    expect(new TextDecoder('utf8', { ignoreBOM: true }).decode(decompressed)).to.equal(`${text}foo`);
   });
 });

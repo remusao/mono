@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import { compress, decompress, getCompressedSize } from '../src/index.js';
+import { compress, decompress, decompressRaw, getCompressedSize } from '../src/index.js';
 
 describe('@remusao/smaz', () => {
   [
@@ -28,16 +28,18 @@ describe('@remusao/smaz', () => {
     });
   });
 
-  [
-    '한글',
-    '日本語',
-    '中華料理'
-  ].forEach(str => {
-    it(str, () => {
-      const encoded = new TextEncoder().encode(str);
-      const compressed = compress(encoded);
-      expect(compressed).to.have.length(getCompressedSize(encoded));
-      expect(decompress(compressed)).to.equal(str);
+  context('utf8', () => {
+    [
+      '한글',
+      '日本語',
+      '中華料理'
+    ].forEach(str => {
+      it(str, () => {
+        const encoded = new TextEncoder().encode(str);
+        const compressed = compress(encoded);
+        expect(compressed).to.have.length(getCompressedSize(encoded));
+        expect(new TextDecoder('utf8').decode(decompressRaw(compressed))).to.equal(str);
+      })
     })
   })
 });
