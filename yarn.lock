@@ -1691,7 +1691,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/bench@npm:^1.1.1, @remusao/bench@workspace:packages/bench":
+"@remusao/bench@npm:^1.2.0, @remusao/bench@workspace:packages/bench":
   version: 0.0.0-use.local
   resolution: "@remusao/bench@workspace:packages/bench"
   dependencies:
@@ -1711,7 +1711,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/counter@npm:^1.3.1, @remusao/counter@workspace:packages/counter":
+"@remusao/counter@npm:^1.4.0, @remusao/counter@workspace:packages/counter":
   version: 0.0.0-use.local
   resolution: "@remusao/counter@workspace:packages/counter"
   dependencies:
@@ -1770,11 +1770,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-benchmarks@workspace:packages/smaz-benchmarks"
   dependencies:
-    "@remusao/smaz": "npm:^1.9.1"
+    "@remusao/smaz": "npm:^1.10.0"
     "@types/benchmark": "npm:^2.1.0"
     "@types/node": "npm:^20.14.10"
     benchmark: "npm:^2.1.4"
-    chalk: "npm:^5.0.1"
+    chalk: "npm:4.1.2"
     rimraf: "npm:^3.0.0"
     ts-node: "npm:^10.0.0"
     tslint: "npm:^6.0.0"
@@ -1783,11 +1783,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz-compress@npm:^1.9.1, @remusao/smaz-compress@workspace:packages/smaz-compress":
+"@remusao/smaz-compress@npm:^1.10.0, @remusao/smaz-compress@workspace:packages/smaz-compress":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-compress@workspace:packages/smaz-compress"
   dependencies:
-    "@remusao/trie": "npm:^1.4.1"
+    "@remusao/trie": "npm:^1.5.0"
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     chai: "npm:^4.2.0"
@@ -1801,7 +1801,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz-decompress@npm:^1.9.1, @remusao/smaz-decompress@workspace:packages/smaz-decompress":
+"@remusao/smaz-decompress@npm:^1.10.0, @remusao/smaz-decompress@workspace:packages/smaz-decompress":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-decompress@workspace:packages/smaz-decompress"
   dependencies:
@@ -1822,9 +1822,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-generate@workspace:packages/smaz-generate"
   dependencies:
-    "@remusao/counter": "npm:^1.3.1"
-    "@remusao/smaz": "npm:^1.9.1"
-    "@remusao/smaz-compress": "npm:^1.9.1"
+    "@remusao/counter": "npm:^1.4.0"
+    "@remusao/smaz": "npm:^1.10.0"
+    "@remusao/smaz-compress": "npm:^1.10.0"
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     chai: "npm:^4.2.0"
@@ -1838,12 +1838,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz@npm:^1.9.1, @remusao/smaz@workspace:packages/smaz":
+"@remusao/smaz@npm:^1.10.0, @remusao/smaz@workspace:packages/smaz":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz@workspace:packages/smaz"
   dependencies:
-    "@remusao/smaz-compress": "npm:^1.9.1"
-    "@remusao/smaz-decompress": "npm:^1.9.1"
+    "@remusao/smaz-compress": "npm:^1.10.0"
+    "@remusao/smaz-decompress": "npm:^1.10.0"
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^20.14.10"
@@ -1878,7 +1878,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/trie@npm:^1.4.1, @remusao/trie@workspace:packages/trie":
+"@remusao/trie@npm:^1.5.0, @remusao/trie@workspace:packages/trie":
   version: 0.0.0-use.local
   resolution: "@remusao/trie@workspace:packages/trie"
   dependencies:
@@ -1899,7 +1899,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@remusao/url-match-patterns@workspace:packages/url-match-patterns"
   dependencies:
-    "@remusao/bench": "npm:^1.1.1"
+    "@remusao/bench": "npm:^1.2.0"
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^20.14.10"
@@ -2755,6 +2755,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chalk@npm:4.1.2":
+  version: 4.1.2
+  resolution: "chalk@npm:4.1.2"
+  dependencies:
+    ansi-styles: "npm:^4.1.0"
+    supports-color: "npm:^7.1.0"
+  checksum: 10c0/4a3fef5cc34975c898ffe77141450f679721df9dde00f6c304353fa9c8b571929123b26a0e4617bde5018977eb655b31970c297b91b63ee83bb82aeb04666880
+  languageName: node
+  linkType: hard
+
 "chalk@npm:^2.0.0, chalk@npm:^2.3.0, chalk@npm:^2.3.2, chalk@npm:^2.4.1, chalk@npm:^2.4.2":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
@@ -2773,13 +2783,6 @@ __metadata:
     ansi-styles: "npm:^4.1.0"
     supports-color: "npm:^7.1.0"
   checksum: 10c0/3866c8b96eca56b5ff4e1e9a243b65e4f77694a486a2cc49316d54af9dae463d2c52bd99b9f0b7a924b87faf3a16dd6ed12d3a7442ac385b608f285e54696c18
-  languageName: node
-  linkType: hard
-
-"chalk@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "chalk@npm:5.0.1"
-  checksum: 10c0/97898611ae40cfdeda9778901731df1404ea49fac0eb8253804e8d21b8064917df9823e29c0c9d766aab623da1a0b43d0e072d19a73d4f62d0d9115aef4c64e6
   languageName: node
   linkType: hard
 

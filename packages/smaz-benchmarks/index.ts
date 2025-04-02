@@ -1,5 +1,5 @@
 import * as Benchmark from 'benchmark';
-import * as chalk from 'chalk';
+import chalk from 'chalk';
 
 import * as smaz from '@remusao/smaz';
 import * as zlib from 'zlib';
