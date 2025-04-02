@@ -21,7 +21,11 @@ if [ ! -d 'shorter' ] ; then
   tar xvf shorter.tgz
   mv package shorter
   rm shorter.tgz
-  cd ./shorter/ && npm install && cd ..
+  cd ./shorter/
+  # Use node-gyp 10.0.1 for the compatibility with higher Node.JS versions (>=20)
+  npm install -D node-gyp@10.0.1
+  npm install
+  cd ..
 fi
 
 if [ ! -d 'tiny-string' ] ; then
