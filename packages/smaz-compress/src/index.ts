@@ -79,27 +79,19 @@ export class SmazCompress {
       return EMPTY_UINT8_ARRAY;
     }
 
-    let data: Uint8Array;
-    if (typeof str === 'string') {
-      data = new Uint8Array(str.length);
-      for (let i = 0; i < str.length; i++) {
-        data[i] = str.charCodeAt(i);
-      }
-    } else {
-      data = str;
-    }
+    const retrieve = typeof str === 'string' ? str.charCodeAt.bind(str) : str.at.bind(str) as (i: number) => number;
 
     let bufferIndex = 0;
     let verbatimIndex = 0;
     let inputIndex = 0;
 
-    while (inputIndex < data.length) {
+    while (inputIndex < str.length) {
       let indexAfterMatch = -1;
       let code = -1;
       let root: Trie | undefined = this.trie;
 
-      for (let j = inputIndex; j < data.length; j += 1) {
-        root = root.chars.get(data[j]);
+      for (let j = inputIndex; j < str.length; j += 1) {
+        root = root.chars.get(retrieve(j));
         if (root === undefined) {
           break;
         }
@@ -111,7 +103,7 @@ export class SmazCompress {
       }
 
       if (code === -1) {
-        this.verbatim[verbatimIndex++] = data[inputIndex++];
+        this.verbatim[verbatimIndex++] = retrieve(inputIndex++);
         if (verbatimIndex === 255) {
           bufferIndex = this.flushVerbatim(verbatimIndex, bufferIndex);
           verbatimIndex = 0;
