@@ -107,4 +107,23 @@ describe('@remusao/smaz-compress', () => {
     const compressed = smaz.compress(str);
     expect(compressed.length).to.be.eql(smaz.getCompressedSize(str));
   });
+
+  it('compresses Uint8Array with unicode', () => {
+    const smaz = new SmazCompress(['foo']);
+    const text = '한글';
+    const utf8 = new TextEncoder().encode(text);
+    expect(smaz.compress(new Uint8Array([
+      ...utf8,
+      'f'.charCodeAt(0),
+      'o'.charCodeAt(0),
+      'o'.charCodeAt(0),
+    ]))).to.deep.equal(
+      new Uint8Array([
+        255,
+        utf8.byteLength,
+        ...utf8,
+        0, // 'foo'
+      ]),
+    );
+  });
 });
