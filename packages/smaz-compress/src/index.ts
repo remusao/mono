@@ -18,27 +18,19 @@ export class SmazCompress {
       return 0;
     }
 
-    let data: Uint8Array;
-    if (typeof str === 'string') {
-      data = new Uint8Array(str.length);
-      for (let i = 0; i < str.length; i++) {
-        data[i] = str.charCodeAt(i);
-      }
-    } else {
-      data = str;
-    }
+    const retrieve = typeof str === 'string' ? str.charCodeAt.bind(str) : str.at.bind(str) as (i: number) => number;
 
     let bufferIndex = 0;
     let verbatimIndex = 0;
     let inputIndex = 0;
 
-    while (inputIndex < data.length) {
+    while (inputIndex < str.length) {
       let indexAfterMatch = -1;
       let code = -1;
       let root: Trie | undefined = this.trie;
 
       for (let j = inputIndex; j < str.length; j += 1) {
-        root = root.chars.get(data[j]);
+        root = root.chars.get(retrieve(j));
         if (root === undefined) {
           break;
         }
