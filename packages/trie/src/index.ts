@@ -1,4 +1,3 @@
-
 export interface Trie {
   chars: Map<number, Trie>;
   code: number | undefined;
@@ -40,5 +39,5 @@ export function lookup(trie: Trie, str: string): boolean {
     node = node.chars.get(str.charCodeAt(i));
   }
 
-  return node !== undefined && node.code  !== undefined;
+  return node !== undefined && node.code !== undefined;
 }
