@@ -20,7 +20,7 @@ describe('@remusao/smaz', () => {
     'http://google.com',
     'http://programming.reddit.com',
     'http://github.com/antirez/smaz/tree/master',
-  ].forEach(str => {
+  ].forEach((str) => {
     it(str, () => {
       const compressed = compress(str);
       expect(compressed).to.have.length(getCompressedSize(str));
