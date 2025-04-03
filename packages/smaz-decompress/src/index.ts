@@ -1,6 +1,5 @@
 export class SmazDecompress {
-  constructor(private readonly codebook: readonly string[]) {
-  }
+  constructor(private readonly codebook: readonly string[]) {}
 
   public decompress(arr: Uint8Array): string {
     if (arr.byteLength === 0) {
