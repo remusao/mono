@@ -13,7 +13,7 @@ import { extname } from '../src/extname.js';
 import guessRequestType from '../src/index.js';
 
 describe('@remusao/guess-url-type', () => {
-  describe ('#extname', () => {
+  describe('#extname', () => {
     it('returns empty string if no extension', () => {
       expect(extname('https://example.com/foo')).to.equal('');
     });
@@ -31,7 +31,9 @@ describe('@remusao/guess-url-type', () => {
     });
 
     it('ignores query and fragment', () => {
-      expect(extname('https://example.com/foo.js?query#fragment')).to.equal('js');
+      expect(extname('https://example.com/foo.js?query#fragment')).to.equal(
+        'js',
+      );
     });
 
     it('ignores too long extension', () => {
@@ -70,7 +72,9 @@ describe('@remusao/guess-url-type', () => {
 
   describe('falls-back to other', () => {
     it('when extension is unknown', () => {
-      expect(guessRequestType('https://example.com/file.unknown')).to.equal('other');
+      expect(guessRequestType('https://example.com/file.unknown')).to.equal(
+        'other',
+      );
     });
 
     it('when there is no extension', () => {
