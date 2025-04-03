@@ -29,6 +29,7 @@
     "eslint-plugin-prettier": "^5.2.5",
     "lerna": "^4.0.0",
     "prettier": "^3.5.3",
+    "tsx": "^4.19.3",
     "typescript": "5.5.2",
     "typescript-eslint": "^8.29.0"
   },

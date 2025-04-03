@@ -1,0 +1,9 @@
+{
+  "timeout": 10000,
+  "reporter": "spec",
+  "retries": 2,
+  "color": false,
+  "extension": ["ts"],
+  "recursive": true,
+  "node-option": ["import=tsx"]
+}
