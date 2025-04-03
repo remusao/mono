@@ -69,7 +69,7 @@ export class Badge {
     // Whenever the active tab changes, then we update the count of blocked request
     chrome.tabs.onActivated.addListener(({ tabId }) => {
       this.activeTabId = tabId;
-      this.updateBadgeForTab(tabId);
+      void this.updateBadgeForTab(tabId);
     });
 
     // Reset counter if tab is reloaded
@@ -79,16 +79,19 @@ export class Badge {
       }
     });
 
-    getActiveTabId().then((tabId) => {
+    void getActiveTabId().then((tabId) => {
       this.activeTabId = tabId;
     });
 
     // Initialize badge text and background colors
-    if (typeof browser !== 'undefined') { // Firefox-only
-      browser.browserAction.setBadgeTextColor({ color: this.badgeTextColor });
+    if (typeof browser !== 'undefined') {
+      // Firefox-only
+      void browser.browserAction.setBadgeTextColor({
+        color: this.badgeTextColor,
+      });
     }
 
-    chrome.browserAction.setBadgeBackgroundColor({
+    void chrome.browserAction.setBadgeBackgroundColor({
       color: this.badgeBackgroundColor,
     });
   }
@@ -98,29 +101,29 @@ export class Badge {
 
     // Only start animation if increment happened on currently active tab
     if (tabId === this.activeTabId) {
-      this.startUpdatingBadge();
+      void this.startUpdatingBadge();
     }
   }
 
   public reset(tabId: number): void {
     this.counter.delete(tabId);
     if (this.enabled === true) {
-      chrome.browserAction.setBadgeText({ text: '0' });
+      void chrome.browserAction.setBadgeText({ text: '0' });
     }
   }
 
   public disable(): void {
     this.enabled = false;
     this.counter.clear();
-    chrome.browserAction.setBadgeText({ text: '' });
+    void chrome.browserAction.setBadgeText({ text: '' });
     chrome.browserAction.setIcon({ path: this.iconDisabled });
   }
 
   public enable(): void {
     this.enabled = true;
-    chrome.browserAction.enable();
+    void chrome.browserAction.enable();
     chrome.browserAction.setIcon({ path: this.getFirstEnabledIconFrame() });
-    chrome.browserAction.setBadgeText({ text: '0' });
+    void chrome.browserAction.setBadgeText({ text: '0' });
   }
 
   private getFirstEnabledIconFrame(): string {
