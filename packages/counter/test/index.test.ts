@@ -95,7 +95,9 @@ describe('@remusao/counter', () => {
 
     it('rejects negative increments', () => {
       const counter = new Counter();
-      expect(() => counter.incr('foo', -1)).to.throw('Counter#incr only accepts positive values: -1');
+      expect(() => counter.incr('foo', -1)).to.throw(
+        'Counter#incr only accepts positive values: -1',
+      );
     });
   });
 
@@ -132,7 +134,9 @@ describe('@remusao/counter', () => {
 
     it('rejects negative decrement', () => {
       const counter = new Counter();
-      expect(() => counter.decr('foo', -1)).to.throw('Counter#decr only accepts positive values: -1');
+      expect(() => counter.decr('foo', -1)).to.throw(
+        'Counter#decr only accepts positive values: -1',
+      );
     });
   });
 
@@ -143,7 +147,10 @@ describe('@remusao/counter', () => {
     });
 
     it('returns elements', () => {
-      const counter = new Counter([['foo', 2], ['bar', 3]]);
+      const counter = new Counter([
+        ['foo', 2],
+        ['bar', 3],
+      ]);
       counter.incr('baz', 3);
       expect([...counter.entries()]).to.deep.equal([
         ['foo', 2],
@@ -160,7 +167,10 @@ describe('@remusao/counter', () => {
     });
 
     it('returns keys', () => {
-      const counter = new Counter([['foo', 2], ['bar', 3]]);
+      const counter = new Counter([
+        ['foo', 2],
+        ['bar', 3],
+      ]);
       counter.incr('baz', 3);
       expect([...counter.keys()]).to.deep.equal(['foo', 'bar', 'baz']);
     });
