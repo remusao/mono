@@ -26,7 +26,7 @@
   },
   "scripts": {
     "clean": "rimraf dist coverage .nyc_output .tshy .tshy-build",
-    "lint": "tslint --config ../../tslint.json --project ./tsconfig.json",
+    "lint": "eslint src test bench",
     "build": "tshy",
     "test": "nyc mocha"
   },
@@ -39,6 +39,7 @@
     "@types/mocha": "^10.0.7",
     "@types/node": "^20.14.10",
     "chai": "^4.2.0",
+    "eslint": "^9.23.0",
     "match-url-wildcard": "0.0.4",
     "mocha": "^10.6.0",
     "nyc": "^15.0.0",

@@ -2,6 +2,7 @@
   "name": "mono",
   "private": true,
   "description": "A monorepo of TypeScript libraries I maintain",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/remusao/mono.git"
@@ -20,10 +21,16 @@
     "clean": "lerna run --parallel clean && lerna clean --yes"
   },
   "devDependencies": {
+    "@eslint/js": "^9.23.0",
     "@remusao/auto-config": "^1.1.1",
     "auto": "^11.1.6",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
     "lerna": "^4.0.0",
-    "typescript": "5.5.2"
+    "prettier": "^3.5.3",
+    "typescript": "5.5.2",
+    "typescript-eslint": "^8.29.0"
   },
   "prettier": {
     "singleQuote": true,

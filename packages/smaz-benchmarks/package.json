@@ -13,7 +13,7 @@
   },
   "scripts": {
     "clean": "rimraf dist coverage deps",
-    "lint": "tslint --config ../../tslint.json --project ./tsconfig.json",
+    "lint": "eslint index.ts",
     "bench": "./prepare.sh && ts-node --project ./tsconfig.json ./index.ts"
   },
   "bugs": {
@@ -28,6 +28,7 @@
   "devDependencies": {
     "@types/benchmark": "^2.1.0",
     "@types/node": "^20.14.10",
+    "eslint": "^9.23.0",
     "rimraf": "^3.0.0",
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
