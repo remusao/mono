@@ -6,12 +6,11 @@ export interface Options {
   maxNgram: number;
   maxRoundsWithNoImprovements: number;
   finetuneNgrams: number[];
-  debug: (...args: any[]) => void;
+  debug: (...args: unknown[]) => void;
 }
 
 class FakeCounter {
-  constructor(private readonly array: readonly string[]) {
-  }
+  constructor(private readonly array: readonly string[]) {}
 
   public *entries(): IterableIterator<readonly [string, number]> {
     for (const str of this.array) {
@@ -24,8 +23,7 @@ export class Builder {
   private readonly added: Counter<string> = new Counter();
   private readonly removed: Counter<string> = new Counter();
 
-  constructor(private readonly strings: readonly string[]) {
-  }
+  constructor(private readonly strings: readonly string[]) {}
 
   public *entries(): IterableIterator<readonly [string, number]> {
     for (const str of this.strings) {
@@ -118,7 +116,10 @@ function delCounts(
   }
 }
 
-function getNextBestSubstring(counter: Counter<string>, minNgram: number = 1): string {
+function getNextBestSubstring(
+  counter: Counter<string>,
+  minNgram: number = 1,
+): string {
   let bestScore = 0;
   let bestSubstring = '';
   for (const [substring, count] of counter.entries()) {
@@ -180,7 +181,12 @@ export function generate(
   const strings = new Builder(originalStrings);
 
   debug(`Counting [${minNgram},${maxNgram}]-grams`);
-  addCounts(new FakeCounter(originalStrings).entries(), counter, minNgram, maxNgram);
+  addCounts(
+    new FakeCounter(originalStrings).entries(),
+    counter,
+    minNgram,
+    maxNgram,
+  );
   debug('Counter size', counter.size);
 
   debug('Creating codebook.');
@@ -206,7 +212,9 @@ export function generate(
     for (const n of finetuneNgrams) {
       const nCounter: Counter<string> = new Counter();
       addCounts(new FakeCounter(originalStrings).entries(), nCounter, n, n);
-      const candidates = [...nCounter.entries()].sort((v1, v2) => v2[1] - v1[1]);
+      const candidates = [...nCounter.entries()].sort(
+        (v1, v2) => v2[1] - v1[1],
+      );
       let roundsWithNoImprovements = 0;
       debug(`[finetune] ${n}-grams`, candidates);
 
@@ -225,7 +233,9 @@ export function generate(
         }
 
         if (roundsWithNoImprovements >= maxRoundsWithNoImprovements) {
-          debug(`Stopping optimization process after ${maxRoundsWithNoImprovements} rounds`);
+          debug(
+            `Stopping optimization process after ${maxRoundsWithNoImprovements} rounds`,
+          );
           break;
         }
 

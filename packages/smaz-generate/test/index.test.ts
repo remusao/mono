@@ -24,7 +24,10 @@ describe('@remusao/smaz-generate', () => {
         const { added, removed } = builder.removeWithSubstring('baz');
         expect(added.size).to.equal(0);
         expect(removed.size).to.equal(0);
-        expect([...builder.entries()]).to.deep.equal([['foo', 1], ['bar', 1]]);
+        expect([...builder.entries()]).to.deep.equal([
+          ['foo', 1],
+          ['bar', 1],
+        ]);
       });
 
       it('removes full entries', () => {
@@ -36,7 +39,14 @@ describe('@remusao/smaz-generate', () => {
       });
 
       it('removes partial entries', () => {
-        const builder = new Builder(['foo', 'bar', 'baz', 'foobarbaz', 'foobar', 'barfoo']);
+        const builder = new Builder([
+          'foo',
+          'bar',
+          'baz',
+          'foobarbaz',
+          'foobar',
+          'barfoo',
+        ]);
         const { added, removed } = builder.removeWithSubstring('foo');
 
         expect([...added.entries()]).to.deep.equal([
@@ -60,7 +70,14 @@ describe('@remusao/smaz-generate', () => {
       });
 
       it('removes overlapping entries', () => {
-        const builder = new Builder(['foo', 'bar', 'baz', 'foobarbaz', 'foobar', 'barfoo']);
+        const builder = new Builder([
+          'foo',
+          'bar',
+          'baz',
+          'foobarbaz',
+          'foobar',
+          'barfoo',
+        ]);
         builder.removeWithSubstring('foo');
         const { added, removed } = builder.removeWithSubstring('ar');
 
@@ -84,9 +101,11 @@ describe('@remusao/smaz-generate', () => {
   });
 
   it('has perfect compression on small input', () => {
-    const custom = new Smaz(generate(['foo', 'bar', 'baz'], {
-      finetuneNgrams: [1, 2, 3],
-    }));
+    const custom = new Smaz(
+      generate(['foo', 'bar', 'baz'], {
+        finetuneNgrams: [1, 2, 3],
+      }),
+    );
 
     const checkCompress = (str: string, size: number) => {
       const compressed = custom.compress(str);
