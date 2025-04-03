@@ -11,7 +11,7 @@ export default tseslint.config(
   {
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.json', './packages/*/tsconfig.json'],
+        project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'],
         // import.meta.dirname requires node 21
         tsconfigRootDir: dirname(fileURLToPath(import.meta.url)),
       },

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   timeout: 10000,
   reporter: 'spec',
   require: ['ts-node/register'],
@@ -9,5 +9,5 @@ module.exports = {
   'node-option': [
     'experimental-specifier-resolution=node',
     'loader=ts-node/esm',
-  ]
+  ],
 };
