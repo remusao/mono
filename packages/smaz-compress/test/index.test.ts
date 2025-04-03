@@ -13,13 +13,15 @@ describe('@remusao/smaz-compress', () => {
   it('compresses string not from codebook', () => {
     const smaz = new SmazCompress(['foo']);
     expect(smaz.getCompressedSize('bar')).to.equal(5);
-    expect(smaz.compress('bar')).to.deep.equal(new Uint8Array([
-      255, // VERBATIM
-      3, // 'bar'.length
-      'b'.charCodeAt(0),
-      'a'.charCodeAt(0),
-      'r'.charCodeAt(0),
-    ]));
+    expect(smaz.compress('bar')).to.deep.equal(
+      new Uint8Array([
+        255, // VERBATIM
+        3, // 'bar'.length
+        'b'.charCodeAt(0),
+        'a'.charCodeAt(0),
+        'r'.charCodeAt(0),
+      ]),
+    );
   });
 
   it('compresses string from codebook', () => {
@@ -32,28 +34,32 @@ describe('@remusao/smaz-compress', () => {
     const smaz = new SmazCompress(['foo']);
 
     expect(smaz.getCompressedSize('barfoob')).to.be.equal(8);
-    expect(smaz.compress('barfoob')).to.deep.equal(new Uint8Array([
-      255, // VERBATIM
-      3, // 'bar'.length
-      'b'.charCodeAt(0),
-      'a'.charCodeAt(0),
-      'r'.charCodeAt(0),
-      0, // 'foo'
-      254, // VERBATIM
-      'b'.charCodeAt(0),
-    ]));
+    expect(smaz.compress('barfoob')).to.deep.equal(
+      new Uint8Array([
+        255, // VERBATIM
+        3, // 'bar'.length
+        'b'.charCodeAt(0),
+        'a'.charCodeAt(0),
+        'r'.charCodeAt(0),
+        0, // 'foo'
+        254, // VERBATIM
+        'b'.charCodeAt(0),
+      ]),
+    );
 
     expect(smaz.getCompressedSize('bfoobar')).to.eql(8);
-    expect(smaz.compress('bfoobar')).to.deep.equal(new Uint8Array([
-      254, // VERBATIM
-      'b'.charCodeAt(0),
-      0, // 'foo'
-      255, // VERBATIM
-      3, // 'bar'.length
-      'b'.charCodeAt(0),
-      'a'.charCodeAt(0),
-      'r'.charCodeAt(0),
-    ]));
+    expect(smaz.compress('bfoobar')).to.deep.equal(
+      new Uint8Array([
+        254, // VERBATIM
+        'b'.charCodeAt(0),
+        0, // 'foo'
+        255, // VERBATIM
+        3, // 'bar'.length
+        'b'.charCodeAt(0),
+        'a'.charCodeAt(0),
+        'r'.charCodeAt(0),
+      ]),
+    );
   });
 
   it('handles ambiguous codebook', () => {
