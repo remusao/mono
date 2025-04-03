@@ -38,6 +38,7 @@
     "@types/chai": "^4.2.8",
     "@types/mocha": "^10.0.7",
     "@types/node": "^20.14.10",
+    "@types/url-match-patterns": "^0.2.2",
     "chai": "^4.2.0",
     "eslint": "^9.23.0",
     "match-url-wildcard": "0.0.4",

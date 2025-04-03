@@ -2055,6 +2055,7 @@ __metadata:
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^20.14.10"
+    "@types/url-match-patterns": "npm:^0.2.2"
     chai: "npm:^4.2.0"
     eslint: "npm:^9.23.0"
     match-url-wildcard: "npm:0.0.4"
@@ -2235,6 +2236,13 @@ __metadata:
   version: 4.0.0
   resolution: "@types/parse-json@npm:4.0.0"
   checksum: 10c0/1d3012ab2fcdad1ba313e1d065b737578f6506c8958e2a7a5bdbdef517c7e930796cb1599ee067d5dee942fb3a764df64b5eef7e9ae98548d776e86dcffba985
+  languageName: node
+  linkType: hard
+
+"@types/url-match-patterns@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "@types/url-match-patterns@npm:0.2.2"
+  checksum: 10c0/266ce29881a205ad9b53befafe7193ec57f5f0187fef51cffe49fb2fc1429ea88197430ce2dfd1135f7255de2c26425a0b8581d075d502102dcef6165f25d177
   languageName: node
   linkType: hard
 
