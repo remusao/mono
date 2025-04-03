@@ -1,8 +1,8 @@
 import { promises as fs } from 'fs';
 
-import { parse, format } from '.';
+import { parse, format } from './src/index.js';
 
-(async () => {
+void (async () => {
   const msgRulesPath = process.argv[process.argv.length - 1];
   if (msgRulesPath.endsWith('/msgFilterRules.dat') === false) {
     console.error('usage: <program> <msgFilterRules.dat>');

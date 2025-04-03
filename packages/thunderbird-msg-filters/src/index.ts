@@ -1,29 +1,28 @@
-const ActionNames = [
-  'AddTag',
-  'Change priority',
-  'Copy to folder',
-  'Custom',
-  'Delete from Pop3 server',
-  'Delete',
-  'Fetch body from Pop3Server',
-  'Forward',
-  'Ignore subthread',
-  'Ignore thread',
-  'JunkScore',
-  'Label',
-  'Leave on Pop3 server',
-  'Mark flagged',
-  'Mark read',
-  'Mark unread',
-  'Move to folder',
-  'Reply',
-  'Stop execution',
-  'Watch thread',
-] as const;
+type ActionNames =
+  | 'AddTag'
+  | 'Change priority'
+  | 'Copy to folder'
+  | 'Custom'
+  | 'Delete from Pop3 server'
+  | 'Delete'
+  | 'Fetch body from Pop3Server'
+  | 'Forward'
+  | 'Ignore subthread'
+  | 'Ignore thread'
+  | 'JunkScore'
+  | 'Label'
+  | 'Leave on Pop3 server'
+  | 'Mark flagged'
+  | 'Mark read'
+  | 'Mark unread'
+  | 'Move to folder'
+  | 'Reply'
+  | 'Stop execution'
+  | 'Watch thread';
 
 // TODO - split in two types
 interface Action {
-  name: typeof ActionNames[number];
+  name: ActionNames;
   value?: string;
 }
 
@@ -58,7 +57,6 @@ export function format(msgRules: Rules): string {
       }
     }
     lines.push(`condition="${rule.condition}"`);
-
   }
 
   return lines.join('\n');
@@ -82,7 +80,9 @@ export function parse(msgRulesRaw: string): Rules {
   };
 
   // Parse rules!
-  const lines = msgRulesRaw.split(/[\n\r]+/g).filter(l => l.trim().length !== 0);
+  const lines = msgRulesRaw
+    .split(/[\n\r]+/g)
+    .filter((l) => l.trim().length !== 0);
   if (lines.length < 1 || lines[0].startsWith('version=') === false) {
     error(1, 'msgFilterRules.dat should specify a version.');
     process.exit(1);
@@ -90,7 +90,10 @@ export function parse(msgRulesRaw: string): Rules {
 
   const version = normalizeValue(lines[0].slice(8));
   if (version !== '9') {
-    error(1, `msgFilterRules.dat version not supported, should be "9" but found "${version}".`);
+    error(
+      1,
+      `msgFilterRules.dat version not supported, should be "9" but found "${version}".`,
+    );
     process.exit(1);
   }
 
@@ -102,7 +105,8 @@ export function parse(msgRulesRaw: string): Rules {
   const logging = normalizeValue(lines[1].slice(8));
   if (logging !== 'yes' && logging !== 'no') {
     error(
-      2, `msgFilterRules.dat logging value is not valid, should be "yes" or "no" but found "${logging}".`,
+      2,
+      `msgFilterRules.dat logging value is not valid, should be "yes" or "no" but found "${logging}".`,
     );
     process.exit(1);
   }
@@ -199,7 +203,6 @@ export function parse(msgRulesRaw: string): Rules {
       actions: state.actions,
       condition: state.condition,
     });
-
   };
 
   for (let i = 2; i < lines.length; i += 1) {
@@ -230,7 +233,10 @@ export function parse(msgRulesRaw: string): Rules {
       }
       case 'enabled': {
         if (value !== 'yes' && value !== 'no') {
-          error(i + 1, `invalid value for "enabled", expected "yes" or "no" but got ${value}`);
+          error(
+            i + 1,
+            `invalid value for "enabled", expected "yes" or "no" but got ${value}`,
+          );
           state.unparseable = true;
           break;
         }
@@ -240,7 +246,10 @@ export function parse(msgRulesRaw: string): Rules {
       }
       case 'type': {
         if (value !== '17' && value !== '145') {
-          error(i + 1, `invalid value for "type", expected "17" or "145" but got ${value}`);
+          error(
+            i + 1,
+            `invalid value for "type", expected "17" or "145" but got ${value}`,
+          );
           state.unparseable = true;
           break;
         }
@@ -253,8 +262,7 @@ export function parse(msgRulesRaw: string): Rules {
         // and reset the internal parser's state.
         flushAction();
 
-        // @ts-ignore
-        state.actionName = value;
+        state.actionName = value as ActionNames;
         break;
       }
       case 'actionValue': {
