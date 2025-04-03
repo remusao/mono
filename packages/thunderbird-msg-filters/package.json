@@ -23,7 +23,7 @@
   },
   "scripts": {
     "clean": "rimraf dist coverage .nyc_output .tshy .tshy-build",
-    "lint": "eslint src test bin",
+    "lint": "eslint src test bin cli.ts",
     "build": "tshy",
     "test": "nyc mocha"
   },
