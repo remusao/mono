@@ -112,12 +112,16 @@ describe('@remusao/smaz-compress', () => {
     const smaz = new SmazCompress(['foo']);
     const text = '한글';
     const utf8 = new TextEncoder().encode(text);
-    expect(smaz.compress(new Uint8Array([
-      ...utf8,
-      'f'.charCodeAt(0),
-      'o'.charCodeAt(0),
-      'o'.charCodeAt(0),
-    ]))).to.deep.equal(
+    expect(
+      smaz.compress(
+        new Uint8Array([
+          ...utf8,
+          'f'.charCodeAt(0),
+          'o'.charCodeAt(0),
+          'o'.charCodeAt(0),
+        ]),
+      ),
+    ).to.deep.equal(
       new Uint8Array([
         255,
         utf8.byteLength,

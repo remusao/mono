@@ -18,7 +18,10 @@ export class SmazCompress {
       return 0;
     }
 
-    const retrieve = typeof str === 'string' ? str.charCodeAt.bind(str) : str.at.bind(str) as (i: number) => number;
+    const retrieve =
+      typeof str === 'string'
+        ? str.charCodeAt.bind(str)
+        : (str.at.bind(str) as (i: number) => number);
 
     let bufferIndex = 0;
     let verbatimIndex = 0;
@@ -71,7 +74,10 @@ export class SmazCompress {
       return EMPTY_UINT8_ARRAY;
     }
 
-    const retrieve = typeof str === 'string' ? str.charCodeAt.bind(str) : str.at.bind(str) as (i: number) => number;
+    const retrieve =
+      typeof str === 'string'
+        ? str.charCodeAt.bind(str)
+        : (str.at.bind(str) as (i: number) => number);
 
     let bufferIndex = 0;
     let verbatimIndex = 0;

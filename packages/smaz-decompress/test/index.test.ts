@@ -57,7 +57,7 @@ describe('@remusao/smaz-compress', () => {
 
   it('decompresses a utf8 container', () => {
     const smaz = SmazDecompressRaw.fromStringCodebook(['foo']);
-    const text = '한글'
+    const text = '한글';
     const utf8 = new TextEncoder().encode(text);
     const decompressed = smaz.decompress(
       new Uint8Array([
@@ -67,6 +67,8 @@ describe('@remusao/smaz-compress', () => {
         0, // 'foo'
       ]),
     );
-    expect(new TextDecoder('utf8', { ignoreBOM: true }).decode(decompressed)).to.equal(`${text}foo`);
+    expect(
+      new TextDecoder('utf8', { ignoreBOM: true }).decode(decompressed),
+    ).to.equal(`${text}foo`);
   });
 });

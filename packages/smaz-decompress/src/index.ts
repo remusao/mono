@@ -29,19 +29,20 @@ export class SmazDecompress {
 
 export class SmazDecompressRaw {
   public static fromStringCodebook(codebook: readonly string[]) {
-    return new this(codebook.map(str => {
-      const arr = new Uint8Array(str.length);
-      for (let i = 0; i < arr.length; i++) {
-        arr[i] = str.charCodeAt(i);
-      }
-      return arr;
-    }));
+    return new this(
+      codebook.map((str) => {
+        const arr = new Uint8Array(str.length);
+        for (let i = 0; i < arr.length; i++) {
+          arr[i] = str.charCodeAt(i);
+        }
+        return arr;
+      }),
+    );
   }
 
   private EMPTY_UINT8_ARRAY = new Uint8Array(0);
 
-  constructor(private readonly codebook: readonly Uint8Array[]) {
-  }
+  constructor(private readonly codebook: readonly Uint8Array[]) {}
 
   public decompress(arr: Uint8Array): Uint8Array {
     if (arr.byteLength === 0) {
@@ -65,7 +66,9 @@ export class SmazDecompressRaw {
       }
     }
 
-    const output = new Uint8Array(chunks.reduce((state, chunk) => state + chunk.byteLength, 0));
+    const output = new Uint8Array(
+      chunks.reduce((state, chunk) => state + chunk.byteLength, 0),
+    );
     for (let j = 0, offset = 0; j < chunks.length; j++) {
       output.set(chunks[j], offset);
       offset += chunks[j].byteLength;
