@@ -1,6 +1,6 @@
 {
   "name": "@remusao/smaz-generate",
-  "version": "1.10.0",
+  "version": "2.0.0",
   "description": "Generate optimized codebooks from data to use in smaz compression",
   "author": "Rémi Berson <remi@cliqz.com>",
   "homepage": "https://github.com/remusao/mono#readme",
@@ -34,11 +34,11 @@
     "url": "https://github.com/remusao/mono/issues"
   },
   "dependencies": {
-    "@remusao/counter": "^1.4.0",
-    "@remusao/smaz-compress": "^1.10.0"
+    "@remusao/counter": "^2.0.0",
+    "@remusao/smaz-compress": "^2.0.0"
   },
   "devDependencies": {
-    "@remusao/smaz": "^1.10.0",
+    "@remusao/smaz": "^2.0.0",
     "@types/chai": "^4.2.8",
     "@types/mocha": "^10.0.7",
     "chai": "^4.2.0",

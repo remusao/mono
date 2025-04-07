@@ -1,6 +1,6 @@
 {
   "name": "@remusao/badger",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "A high-level abstraction to manipulate browser action badge in extensions",
   "author": "Rémi Berson <remi@cliqz.com>",
   "homepage": "https://github.com/remusao/mono#readme",
