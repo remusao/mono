@@ -1,6 +1,5 @@
 const CONTENT_TYPE = 'video/mp4';
 
-
 export default {
   contentType: `${CONTENT_TYPE};base64`,
   aliases: [

@@ -1,9 +1,17 @@
 {
   "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@deps/shorter": ["./deps/shorter/index.js"],
+      "@deps/smaz": ["./deps/smaz/index.js"],
+      "@deps/tiny-string": ["./deps/tiny-string"]
+    }
+  },
   "references": [
     { "path": "../smaz/tsconfig.json" }
   ],
-  "files": [
+  "include": [
     "./index.ts",
+    "./types",
   ]
 }

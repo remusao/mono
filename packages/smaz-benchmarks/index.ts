@@ -4,14 +4,9 @@ import chalk from 'chalk';
 import * as smaz from '@remusao/smaz';
 import * as zlib from 'zlib';
 
-// @ts-ignore
-import * as shorter from './deps/shorter/index';
-
-// @ts-ignore
-import * as personalcomputerSmaz from './deps/smaz/index';
-
-// @ts-ignore
-import * as tinyString from './deps/tiny-string/tiny-string.ts';
+import * as shorter from '@deps/shorter';
+import * as personalcomputerSmaz from '@deps/smaz';
+import * as tinyString from '@deps/tiny-string';
 
 // Does not work so far:
 // > for (let index = this.dictionary.length - 1; index >= 0; index--) {
@@ -56,15 +51,15 @@ function benchCompress(
 function benchDecompress(
   name: string,
   strings: string[],
-  compress: (str: string) => Uint8Array,
-  decompress: (str: Uint8Array) => string,
+  compress: (str: string) => Uint8Array | string,
+  decompress: (str: Uint8Array | string) => Uint8Array | string,
 ): void {
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'decimal',
   });
 
   // Validate benched function
-  const buffers: Uint8Array[] = [];
+  const buffers: (Uint8Array | string)[] = [];
   let totalSize = 0;
   for (const str of strings) {
     const compressed = compress(str);
@@ -145,7 +140,7 @@ function benchDecompress(
   benchCompress(
     `${chalk.bold('tiny-string')}#${chalk.underline('tinyStringCompress')}`,
     strings,
-    (str) => tinyString.tinyStringCompress(str).length
+    (str) => tinyString.tinyStringCompress(str).length,
   );
 
   console.log('===== decompress');
@@ -154,14 +149,14 @@ function benchDecompress(
     `${chalk.bold('@remusao/smaz')}#${chalk.underline('decompress')}`,
     strings,
     (str) => smaz.compress(str),
-    (buffer) => smaz.decompress(buffer),
+    (buffer) => smaz.decompress(buffer as Uint8Array),
   );
 
   benchDecompress(
     `${chalk.bold('shorter')}#${chalk.underline('decompress')}`,
     strings,
     (str) => shorter.compress(str),
-    (buffer) => shorter.decompress(buffer),
+    (buffer) => shorter.decompress(buffer as string),
   );
 
   benchDecompress(
@@ -175,7 +170,7 @@ function benchDecompress(
     `${chalk.bold('smaz')}#${chalk.underline('decompress')}`,
     strings,
     (str) => personalcomputerSmaz.compress(str),
-    (buffer) => personalcomputerSmaz.decompress(buffer),
+    (buffer) => personalcomputerSmaz.decompress(buffer as Uint8Array),
   );
 
   // benchDecompress(
@@ -188,7 +183,7 @@ function benchDecompress(
   benchDecompress(
     `${chalk.bold('tiny-string')}#${chalk.underline('tinyStringDecompress')}`,
     strings,
-    (str): any => tinyString.tinyStringCompress(str),
-    (buffer: any) => tinyString.tinyStringDecompress(buffer)
+    (str) => tinyString.tinyStringCompress(str),
+    (buffer) => tinyString.tinyStringDecompress(buffer as string),
   );
 })();

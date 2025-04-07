@@ -13,8 +13,8 @@
   },
   "scripts": {
     "clean": "rimraf dist coverage deps",
-    "lint": "tslint --config ../../tslint.json --project ./tsconfig.json",
-    "bench": "./prepare.sh && ts-node --project ./tsconfig.json ./index.ts"
+    "lint": "eslint index.ts",
+    "bench": "./prepare.sh && tsx ./index.ts"
   },
   "bugs": {
     "url": "https://github.com/remusao/mono/issues"
@@ -22,15 +22,14 @@
   "dependencies": {
     "@remusao/smaz": "^1.10.0",
     "benchmark": "^2.1.4",
-    "chalk": "4.1.2",
-    "ts-node": "^10.0.0"
+    "chalk": "4.1.2"
   },
   "devDependencies": {
     "@types/benchmark": "^2.1.0",
     "@types/node": "^20.14.10",
+    "eslint": "^9.23.0",
     "rimraf": "^3.0.0",
-    "tslint": "^6.0.0",
-    "tslint-config-prettier": "^1.18.0",
+    "tsx": "^4.19.3",
     "typescript": "5.5.2"
   }
 }

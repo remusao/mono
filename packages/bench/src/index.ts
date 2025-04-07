@@ -1,7 +1,7 @@
 import Benchmark from 'benchmark';
 
 export default function bench<Arg>(
-  fn: (arg: Arg) => any,
+  fn: (arg: Arg) => unknown,
   inputs: Iterable<Arg>,
 ): number {
   const inputsArray: Arg[] = [...inputs];

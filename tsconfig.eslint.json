@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "files": [
+    "./.mocharc.js",
+    "./eslint.config.js"
+  ]
+}

@@ -20,7 +20,7 @@ how best to organize them. I have been trying out many different tools
 or "stacks" in the past and have stabilized on the following:
 
 * All code is written in TypeScript targeting ES6.
-* Tslint is used for linting code (I still did not migrate to eslint).
+* Eslint is used for linting code.
 * Lerna is used for version management and publishing (used by `auto`).
 * Yarn workspaces are used to share a lock file and `node_modules` folder.
 * Auto is used for continuous publishing of the libraries (using Lerna).
