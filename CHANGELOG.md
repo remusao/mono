@@ -1,3 +1,16 @@
+# (Mon Apr 07 2025)
+
+#### :boom: Breaking Change
+
+- `@remusao/badger@2.0.0`, `@remusao/bench@2.0.0`, `@remusao/counter@2.0.0`, `@remusao/guess-url-type@2.0.0`, `@remusao/small@2.0.0`, `@remusao/smaz-compress@2.0.0`, `@remusao/smaz-decompress@2.0.0`, `@remusao/smaz-generate@2.0.0`, `@remusao/smaz@2.0.0`, `@remusao/thunderbird-msg-filters@2.0.0`, `@remusao/trie@2.0.0`, `@remusao/url-match-patterns@2.0.0`
+  - refactor(internal): lint and esm corrections [#843](https://github.com/remusao/mono/pull/843) ([@seia-soto](https://github.com/seia-soto))
+
+#### Authors: 1
+
+- HoJeong Go ([@seia-soto](https://github.com/seia-soto))
+
+---
+
 # (Wed Apr 02 2025)
 
 #### :bug: Bug Fix

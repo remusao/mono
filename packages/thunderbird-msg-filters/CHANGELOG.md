@@ -1,3 +1,15 @@
+# v2.0.0 (Mon Apr 07 2025)
+
+#### :boom: Breaking Change
+
+- refactor(internal): lint and esm corrections [#843](https://github.com/remusao/mono/pull/843) ([@seia-soto](https://github.com/seia-soto))
+
+#### Authors: 1
+
+- HoJeong Go ([@seia-soto](https://github.com/seia-soto))
+
+---
+
 # v1.7.0 (Thu Jul 11 2024)
 
 #### :rocket: New Feature
