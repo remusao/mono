@@ -20,8 +20,8 @@ export class SmazCompress {
 
     const retrieve =
       typeof str === 'string'
-        ? str.charCodeAt.bind(str)
-        : (str.at.bind(str) as (i: number) => number);
+        ? (idx: number): number => str.charCodeAt(idx)
+        : (idx: number): number => str[idx];
 
     let bufferIndex = 0;
     let verbatimIndex = 0;
