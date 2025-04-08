@@ -31,6 +31,14 @@ const EMPTY_UINT8_ARRAY = new Uint8Array(0);
 const TEXT_ENCODER = new TextEncoder();
 
 export class SmazDecompressRaw {
+  /**
+   * Initialize `SmazDecompressRaw` with a codebook with strings.
+   * We use `TextEncoder` which encodes into utf8 to handle unicode characters such as '🥳'.
+   * If you rely on a different encoding, you should pass encoded codebook to constructor
+   * we don't distinguish the codebook chunk of the output from `decompress` method.
+   * If you mix other encodings in the buffer while relying on this method, you need to
+   * detect utf8 signatures and handle them separately, which is also not guaranteed.
+   */
   public static fromStringCodebook(codebook: readonly string[]) {
     return new this(codebook.map((str) => TEXT_ENCODER.encode(str)));
   }
