@@ -1,9 +1,10 @@
 import { SmazCompress } from '@remusao/smaz-compress';
-import { SmazDecompress } from '@remusao/smaz-decompress';
+import { SmazDecompress, SmazDecompressRaw } from '@remusao/smaz-decompress';
 
 export class Smaz {
   private readonly compressor: SmazCompress;
   private readonly decompressor: SmazDecompress;
+  private readonly rawDecompressor: SmazDecompressRaw;
 
   constructor(
     readonly codebook: readonly string[],
@@ -11,18 +12,23 @@ export class Smaz {
   ) {
     this.compressor = new SmazCompress(codebook, maxSize);
     this.decompressor = new SmazDecompress(codebook);
+    this.rawDecompressor = SmazDecompressRaw.fromStringCodebook(codebook);
   }
 
-  public compress(str: string): Uint8Array {
-    return this.compressor.compress(str);
+  public compress(buffer: string | Uint8Array): Uint8Array {
+    return this.compressor.compress(buffer);
   }
 
-  public getCompressedSize(str: string): number {
-    return this.compressor.getCompressedSize(str);
+  public getCompressedSize(buffer: string | Uint8Array): number {
+    return this.compressor.getCompressedSize(buffer);
   }
 
   public decompress(buffer: Uint8Array): string {
     return this.decompressor.decompress(buffer);
+  }
+
+  public decompressRaw(buffer: Uint8Array): Uint8Array {
+    return this.rawDecompressor.decompress(buffer);
   }
 }
 
@@ -45,10 +51,14 @@ export function decompress(array: Uint8Array): string {
   return getDefaultSmaz().decompress(array);
 }
 
-export function compress(str: string): Uint8Array {
-  return getDefaultSmaz().compress(str);
+export function decompressRaw(array: Uint8Array): Uint8Array {
+  return getDefaultSmaz().decompressRaw(array);
 }
 
-export function getCompressedSize(str: string): number {
-  return getDefaultSmaz().getCompressedSize(str);
+export function compress(buffer: string | Uint8Array): Uint8Array {
+  return getDefaultSmaz().compress(buffer);
+}
+
+export function getCompressedSize(buffer: string | Uint8Array): number {
+  return getDefaultSmaz().getCompressedSize(buffer);
 }

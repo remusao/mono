@@ -30,3 +30,11 @@ const { compress, decompress } = require('@remusao/smaz');
 const compressed = compress('foobar');
 console.log(decompress(compressed));
 ```
+
+With encoding:
+```javascript
+const { compress, decompressRaw } = require('@remusao/smaz');
+
+const compressed = compress(new TextEncoder().encode('foobar'));
+console.log(new TextDecoder('utf8').decode(decompressRaw(compressed)));
+```

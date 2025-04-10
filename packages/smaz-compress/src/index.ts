@@ -13,22 +13,27 @@ export class SmazCompress {
     this.verbatim = new Uint8Array(255);
   }
 
-  public getCompressedSize(str: string): number {
-    if (str.length === 0) {
+  public getCompressedSize(buffer: string | Uint8Array): number {
+    if (buffer.length === 0) {
       return 0;
     }
+
+    const retrieve =
+      typeof buffer === 'string'
+        ? (idx: number): number => buffer.charCodeAt(idx)
+        : (idx: number): number => buffer[idx];
 
     let bufferIndex = 0;
     let verbatimIndex = 0;
     let inputIndex = 0;
 
-    while (inputIndex < str.length) {
+    while (inputIndex < buffer.length) {
       let indexAfterMatch = -1;
       let code = -1;
       let root: Trie | undefined = this.trie;
 
-      for (let j = inputIndex; j < str.length; j += 1) {
-        root = root.chars.get(str.charCodeAt(j));
+      for (let j = inputIndex; j < buffer.length; j += 1) {
+        root = root.chars.get(retrieve(j));
         if (root === undefined) {
           break;
         }
@@ -64,23 +69,27 @@ export class SmazCompress {
     return bufferIndex;
   }
 
-  public compress(str: string): Uint8Array {
-    if (str.length === 0) {
+  public compress(buffer: string | Uint8Array): Uint8Array {
+    if (buffer.length === 0) {
       return EMPTY_UINT8_ARRAY;
     }
+
+    const retrieve =
+      typeof buffer === 'string'
+        ? (idx: number): number => buffer.charCodeAt(idx)
+        : (idx: number): number => buffer[idx];
 
     let bufferIndex = 0;
     let verbatimIndex = 0;
     let inputIndex = 0;
-    const len = str.length;
 
-    while (inputIndex < str.length) {
+    while (inputIndex < buffer.length) {
       let indexAfterMatch = -1;
       let code = -1;
       let root: Trie | undefined = this.trie;
 
-      for (let j = inputIndex; j < len; j += 1) {
-        root = root.chars.get(str.charCodeAt(j));
+      for (let j = inputIndex; j < buffer.length; j += 1) {
+        root = root.chars.get(retrieve(j));
         if (root === undefined) {
           break;
         }
@@ -92,7 +101,7 @@ export class SmazCompress {
       }
 
       if (code === -1) {
-        this.verbatim[verbatimIndex++] = str.charCodeAt(inputIndex++);
+        this.verbatim[verbatimIndex++] = retrieve(inputIndex++);
         if (verbatimIndex === 255) {
           bufferIndex = this.flushVerbatim(verbatimIndex, bufferIndex);
           verbatimIndex = 0;
