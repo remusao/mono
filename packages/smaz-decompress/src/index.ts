@@ -28,7 +28,6 @@ export class SmazDecompress {
 }
 
 const EMPTY_UINT8_ARRAY = new Uint8Array(0);
-const TEXT_ENCODER = new TextEncoder();
 
 export class SmazDecompressRaw {
   /**
@@ -40,7 +39,7 @@ export class SmazDecompressRaw {
    * detect utf8 signatures and handle them separately, which is also not guaranteed.
    */
   public static fromStringCodebook(codebook: readonly string[]) {
-    return new this(codebook.map((str) => TEXT_ENCODER.encode(str)));
+    return new this(codebook.map((str) => new TextEncoder().encode(str)));
   }
 
   constructor(private readonly codebook: readonly Uint8Array[]) {}
