@@ -1,3 +1,15 @@
+# v2.1.0 (Thu Apr 10 2025)
+
+#### :rocket: New Feature
+
+- feat(smaz-compress): accept ui8 array [#841](https://github.com/remusao/mono/pull/841) ([@seia-soto](https://github.com/seia-soto))
+
+#### Authors: 1
+
+- HoJeong Go ([@seia-soto](https://github.com/seia-soto))
+
+---
+
 # v2.0.0 (Mon Apr 07 2025)
 
 #### :boom: Breaking Change
