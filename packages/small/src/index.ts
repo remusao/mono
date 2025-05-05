@@ -96,6 +96,7 @@ const MIME_TO_RESOURCE = (() => {
     [mime: string]: {
       contentType: string;
       body: string;
+      aliases: string[];
     };
   } = {};
   for (const fake of [
