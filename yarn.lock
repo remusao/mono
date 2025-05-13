@@ -2078,7 +2078,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-benchmarks@workspace:packages/smaz-benchmarks"
   dependencies:
-    "@remusao/smaz": "npm:^2.0.0"
+    "@remusao/smaz": "npm:^2.1.0"
     "@types/benchmark": "npm:^2.1.0"
     "@types/node": "npm:^20.14.10"
     benchmark: "npm:^2.1.4"
@@ -2090,7 +2090,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz-compress@npm:^2.0.0, @remusao/smaz-compress@workspace:packages/smaz-compress":
+"@remusao/smaz-compress@npm:^2.1.0, @remusao/smaz-compress@workspace:packages/smaz-compress":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-compress@workspace:packages/smaz-compress"
   dependencies:
@@ -2107,7 +2107,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz-decompress@npm:^2.0.0, @remusao/smaz-decompress@workspace:packages/smaz-decompress":
+"@remusao/smaz-decompress@npm:^2.1.0, @remusao/smaz-decompress@workspace:packages/smaz-decompress":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-decompress@workspace:packages/smaz-decompress"
   dependencies:
@@ -2128,8 +2128,8 @@ __metadata:
   resolution: "@remusao/smaz-generate@workspace:packages/smaz-generate"
   dependencies:
     "@remusao/counter": "npm:^2.0.0"
-    "@remusao/smaz": "npm:^2.0.0"
-    "@remusao/smaz-compress": "npm:^2.0.0"
+    "@remusao/smaz": "npm:^2.1.0"
+    "@remusao/smaz-compress": "npm:^2.1.0"
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     chai: "npm:^4.2.0"
@@ -2142,12 +2142,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz@npm:^2.0.0, @remusao/smaz@workspace:packages/smaz":
+"@remusao/smaz@npm:^2.1.0, @remusao/smaz@workspace:packages/smaz":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz@workspace:packages/smaz"
   dependencies:
-    "@remusao/smaz-compress": "npm:^2.0.0"
-    "@remusao/smaz-decompress": "npm:^2.0.0"
+    "@remusao/smaz-compress": "npm:^2.1.0"
+    "@remusao/smaz-decompress": "npm:^2.1.0"
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^20.14.10"
