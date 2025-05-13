@@ -2078,7 +2078,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-benchmarks@workspace:packages/smaz-benchmarks"
   dependencies:
-    "@remusao/smaz": "npm:^2.0.0"
+    "@remusao/smaz": "npm:^2.1.0"
     "@types/benchmark": "npm:^2.1.0"
     "@types/node": "npm:^20.14.10"
     benchmark: "npm:^2.1.4"
@@ -2090,7 +2090,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz-compress@npm:^2.0.0, @remusao/smaz-compress@workspace:packages/smaz-compress":
+"@remusao/smaz-compress@npm:^2.1.0, @remusao/smaz-compress@workspace:packages/smaz-compress":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-compress@workspace:packages/smaz-compress"
   dependencies:
@@ -2107,7 +2107,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz-decompress@npm:^2.0.0, @remusao/smaz-decompress@workspace:packages/smaz-decompress":
+"@remusao/smaz-decompress@npm:^2.1.0, @remusao/smaz-decompress@workspace:packages/smaz-decompress":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-decompress@workspace:packages/smaz-decompress"
   dependencies:
@@ -2128,8 +2128,8 @@ __metadata:
   resolution: "@remusao/smaz-generate@workspace:packages/smaz-generate"
   dependencies:
     "@remusao/counter": "npm:^2.0.0"
-    "@remusao/smaz": "npm:^2.0.0"
-    "@remusao/smaz-compress": "npm:^2.0.0"
+    "@remusao/smaz": "npm:^2.1.0"
+    "@remusao/smaz-compress": "npm:^2.1.0"
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     chai: "npm:^4.2.0"
@@ -2142,12 +2142,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz@npm:^2.0.0, @remusao/smaz@workspace:packages/smaz":
+"@remusao/smaz@npm:^2.1.0, @remusao/smaz@workspace:packages/smaz":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz@workspace:packages/smaz"
   dependencies:
-    "@remusao/smaz-compress": "npm:^2.0.0"
-    "@remusao/smaz-decompress": "npm:^2.0.0"
+    "@remusao/smaz-compress": "npm:^2.1.0"
+    "@remusao/smaz-decompress": "npm:^2.1.0"
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^20.14.10"
@@ -4248,13 +4248,13 @@ __metadata:
   linkType: hard
 
 "eslint-config-prettier@npm:^10.1.1":
-  version: 10.1.1
-  resolution: "eslint-config-prettier@npm:10.1.1"
+  version: 10.1.5
+  resolution: "eslint-config-prettier@npm:10.1.5"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: 10c0/3dbfdf6495dd62e2e1644ea9e8e978100dabcd8740fd264df1222d130001a1e8de05d6ed6c67d3a60727386a07507f067d1ca79af6d546910414beab19e7966e
+  checksum: 10c0/5486255428e4577e8064b40f27db299faf7312b8e43d7b4bc913a6426e6c0f5950cd519cad81ae24e9aecb4002c502bc665c02e3b52efde57af2debcf27dd6e0
   languageName: node
   linkType: hard
 
