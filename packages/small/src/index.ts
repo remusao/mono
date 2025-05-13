@@ -91,12 +91,15 @@ import wmv from './wmv.js';
 // - [ ] .3g2 	3GPP2 audio/video container 	video/3gpp2, audio/3gpp2 if it doesn't contain video
 // - [ ] .7z 	7-zip archive 	application/x-7z-compressed
 
+type Resource = {
+  contentType: string;
+  aliases: string[];
+  body: string;
+};
+
 const MIME_TO_RESOURCE = (() => {
   const resources: {
-    [mime: string]: {
-      contentType: string;
-      body: string;
-    };
+    [mime: string]: Resource;
   } = {};
   for (const fake of [
     flv,
@@ -129,7 +132,7 @@ export function getFallbackTextResource() {
   return txt;
 }
 
-export function getFallbackBlobResource() {
+export function getFallbackBlobResource(): Resource {
   return {
     contentType: 'application/octet-stream;base64',
     aliases: ['application/octet-stream'],
@@ -188,8 +191,4 @@ export const resources = [
   webm,
   webp,
   wmv,
-] satisfies Array<{
-  contentType: string;
-  aliases: string[];
-  body: string;
-}>;
+] satisfies Resource[];
