@@ -1,6 +1,9 @@
+import { namePrefix } from './types.js';
+
 export const CONTENT_TYPE = 'application/javascript';
 
 export default {
+  name: `${namePrefix}.js`,
   contentType: CONTENT_TYPE,
   aliases: [
     CONTENT_TYPE,
@@ -16,4 +19,4 @@ export default {
     'noopjs',
   ],
   body: '',
-};
+} as const;

@@ -15,6 +15,7 @@ import wav from './wav.js';
 import webm from './webm.js';
 import webp from './webp.js';
 import wmv from './wmv.js';
+import { namePrefix, Resource } from './types.js';
 
 // List of mime types:
 // - [ ] .aac 	AAC audio 	audio/aac
@@ -91,12 +92,6 @@ import wmv from './wmv.js';
 // - [ ] .3g2 	3GPP2 audio/video container 	video/3gpp2, audio/3gpp2 if it doesn't contain video
 // - [ ] .7z 	7-zip archive 	application/x-7z-compressed
 
-type Resource = {
-  contentType: string;
-  aliases: string[];
-  body: string;
-};
-
 const MIME_TO_RESOURCE = (() => {
   const resources: {
     [mime: string]: Resource;
@@ -134,6 +129,7 @@ export function getFallbackTextResource() {
 
 export function getFallbackBlobResource(): Resource {
   return {
+    name: `${namePrefix}.blob`,
     contentType: 'application/octet-stream;base64',
     aliases: ['application/octet-stream'],
     body: 'Cg==',
