@@ -169,3 +169,27 @@ export {
   webp,
   wmv,
 };
+
+export const resources = [
+  flv,
+  gif,
+  html,
+  ico,
+  jpg,
+  js,
+  json,
+  mp3,
+  mp4,
+  pdf,
+  png,
+  svg,
+  txt,
+  wav,
+  webm,
+  webp,
+  wmv,
+] satisfies Array<{
+  contentType: string;
+  aliases: string[];
+  body: string;
+}>;
