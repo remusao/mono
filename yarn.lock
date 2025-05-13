@@ -2253,9 +2253,9 @@ __metadata:
   linkType: hard
 
 "@types/benchmark@npm:^2.1.0":
-  version: 2.1.1
-  resolution: "@types/benchmark@npm:2.1.1"
-  checksum: 10c0/f130b9982be584756a0e5212aa48e01075fc3a9766a303865b1ef32f11d36f9121c6edc0123f4b9c6be382c5b7aa51f3f4bfd843359f10ce414e696afde7ac73
+  version: 2.1.5
+  resolution: "@types/benchmark@npm:2.1.5"
+  checksum: 10c0/31ca163891bea0dbe28ad517ae95d18531518049e95cfac218e082590b33edd75cda23fc3e4abf72112b3928e844488c9b029b33aa29f825a83a16d2ed202154
   languageName: node
   linkType: hard
 
