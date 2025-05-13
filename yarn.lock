@@ -2078,11 +2078,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-benchmarks@workspace:packages/smaz-benchmarks"
   dependencies:
-    "@remusao/smaz": "npm:^2.0.0"
+    "@remusao/smaz": "npm:^2.1.0"
     "@types/benchmark": "npm:^2.1.0"
     "@types/node": "npm:^20.14.10"
     benchmark: "npm:^2.1.4"
-    chalk: "npm:4.1.2"
+    chalk: "npm:5.4.1"
     eslint: "npm:^9.23.0"
     rimraf: "npm:^3.0.0"
     tsx: "npm:^4.19.3"
@@ -2090,7 +2090,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz-compress@npm:^2.0.0, @remusao/smaz-compress@workspace:packages/smaz-compress":
+"@remusao/smaz-compress@npm:^2.1.0, @remusao/smaz-compress@workspace:packages/smaz-compress":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-compress@workspace:packages/smaz-compress"
   dependencies:
@@ -2107,7 +2107,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz-decompress@npm:^2.0.0, @remusao/smaz-decompress@workspace:packages/smaz-decompress":
+"@remusao/smaz-decompress@npm:^2.1.0, @remusao/smaz-decompress@workspace:packages/smaz-decompress":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz-decompress@workspace:packages/smaz-decompress"
   dependencies:
@@ -2128,8 +2128,8 @@ __metadata:
   resolution: "@remusao/smaz-generate@workspace:packages/smaz-generate"
   dependencies:
     "@remusao/counter": "npm:^2.0.0"
-    "@remusao/smaz": "npm:^2.0.0"
-    "@remusao/smaz-compress": "npm:^2.0.0"
+    "@remusao/smaz": "npm:^2.1.0"
+    "@remusao/smaz-compress": "npm:^2.1.0"
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     chai: "npm:^4.2.0"
@@ -2142,12 +2142,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@remusao/smaz@npm:^2.0.0, @remusao/smaz@workspace:packages/smaz":
+"@remusao/smaz@npm:^2.1.0, @remusao/smaz@workspace:packages/smaz":
   version: 0.0.0-use.local
   resolution: "@remusao/smaz@workspace:packages/smaz"
   dependencies:
-    "@remusao/smaz-compress": "npm:^2.0.0"
-    "@remusao/smaz-decompress": "npm:^2.0.0"
+    "@remusao/smaz-compress": "npm:^2.1.0"
+    "@remusao/smaz-decompress": "npm:^2.1.0"
     "@types/chai": "npm:^4.2.8"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^20.14.10"
@@ -3208,13 +3208,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:4.1.2":
-  version: 4.1.2
-  resolution: "chalk@npm:4.1.2"
-  dependencies:
-    ansi-styles: "npm:^4.1.0"
-    supports-color: "npm:^7.1.0"
-  checksum: 10c0/4a3fef5cc34975c898ffe77141450f679721df9dde00f6c304353fa9c8b571929123b26a0e4617bde5018977eb655b31970c297b91b63ee83bb82aeb04666880
+"chalk@npm:5.4.1":
+  version: 5.4.1
+  resolution: "chalk@npm:5.4.1"
+  checksum: 10c0/b23e88132c702f4855ca6d25cb5538b1114343e41472d5263ee8a37cccfccd9c4216d111e1097c6a27830407a1dc81fecdf2a56f2c63033d4dbbd88c10b0dcef
   languageName: node
   linkType: hard
 
