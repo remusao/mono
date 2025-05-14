@@ -41,7 +41,7 @@
     "@types/url-match-patterns": "^0.2.2",
     "chai": "^4.2.0",
     "eslint": "^9.23.0",
-    "match-url-wildcard": "0.0.4",
+    "match-url-wildcard": "0.0.5",
     "mocha": "^11.2.2",
     "nyc": "^15.0.0",
     "rimraf": "^3.0.0",
