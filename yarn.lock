@@ -2108,7 +2108,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2126,7 +2126,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2143,7 +2143,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2160,7 +2160,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2177,7 +2177,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2193,7 +2193,7 @@ __metadata:
     benchmark: "npm:^2.1.4"
     chalk: "npm:5.4.1"
     eslint: "npm:^9.23.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tsx: "npm:^4.19.3"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2210,7 +2210,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2226,7 +2226,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2245,7 +2245,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2264,7 +2264,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2281,7 +2281,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   bin:
@@ -2299,7 +2299,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
   languageName: unknown
@@ -2319,7 +2319,7 @@ __metadata:
     match-url-wildcard: "npm:0.0.5"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
-    rimraf: "npm:^3.0.0"
+    rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
     typescript: "npm:5.8.3"
     url-match-patterns: "npm:^0.2.0"
@@ -9116,7 +9116,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:^6.0.0":
+"rimraf@npm:^6.0.0, rimraf@npm:^6.0.1":
   version: 6.0.1
   resolution: "rimraf@npm:6.0.1"
   dependencies:
