@@ -10,10 +10,9 @@
   "author": "Rémi Berson",
   "license": "MPL-2.0",
   "workspaces": [
-    "./packages/*"
+    "packages/*"
   ],
   "scripts": {
-    "bootstrap": "yarn install --frozen-lock && lerna bootstrap",
     "lint": "lerna run --parallel lint",
     "build": "lerna run build",
     "test": "lerna run --concurrency 1 test",
@@ -27,7 +26,7 @@
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.5",
-    "lerna": "^4.0.0",
+    "lerna": "8.2.2",
     "prettier": "^3.5.3",
     "tsx": "^4.19.3",
     "typescript": "5.8.3",
