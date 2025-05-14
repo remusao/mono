@@ -2149,7 +2149,7 @@ __metadata:
     "@types/benchmark": "npm:^2.1.0"
     "@types/node": "npm:^20.14.10"
     benchmark: "npm:^2.1.4"
-    chalk: "npm:4.1.2"
+    chalk: "npm:5.4.1"
     eslint: "npm:^9.23.0"
     rimraf: "npm:^3.0.0"
     tsx: "npm:^4.19.3"
@@ -3259,13 +3259,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:4.1.2":
-  version: 4.1.2
-  resolution: "chalk@npm:4.1.2"
-  dependencies:
-    ansi-styles: "npm:^4.1.0"
-    supports-color: "npm:^7.1.0"
-  checksum: 10c0/4a3fef5cc34975c898ffe77141450f679721df9dde00f6c304353fa9c8b571929123b26a0e4617bde5018977eb655b31970c297b91b63ee83bb82aeb04666880
+"chalk@npm:5.4.1":
+  version: 5.4.1
+  resolution: "chalk@npm:5.4.1"
+  checksum: 10c0/b23e88132c702f4855ca6d25cb5538b1114343e41472d5263ee8a37cccfccd9c4216d111e1097c6a27830407a1dc81fecdf2a56f2c63033d4dbbd88c10b0dcef
   languageName: node
   linkType: hard
 
