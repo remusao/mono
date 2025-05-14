@@ -37,9 +37,9 @@
     "@remusao/trie": "^2.0.0"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.8",
+    "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.7",
-    "chai": "^4.2.0",
+    "chai": "^5.2.0",
     "eslint": "^9.23.0",
     "mocha": "^11.2.2",
     "nyc": "^15.0.0",
