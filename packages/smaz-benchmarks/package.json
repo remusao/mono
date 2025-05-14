@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@types/benchmark": "^2.1.0",
-    "@types/node": "^20.14.10",
+    "@types/node": "^22.15.18",
     "eslint": "^9.23.0",
     "rimraf": "^3.0.0",
     "tsx": "^4.19.3",
