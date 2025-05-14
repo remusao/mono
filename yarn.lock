@@ -5,18 +5,18 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@auto-it/bot-list@npm:11.1.6":
-  version: 11.1.6
-  resolution: "@auto-it/bot-list@npm:11.1.6"
-  checksum: 10c0/c8dd21f3da6c1c490acb00a4ba146512d1363b81d8f5812304a9766af0c08246ce000d6bcfaa0a2b8ed0e24f283716d357a7c6b20104e79ce55864d641a15f65
+"@auto-it/bot-list@npm:11.3.0":
+  version: 11.3.0
+  resolution: "@auto-it/bot-list@npm:11.3.0"
+  checksum: 10c0/17facb15164a094bdbae7e9635a661068fd8d15ce8aae3d0c4995cff58cb0799d990d6a851937f6c9475f6d94f84a8139c108422237de8f4bca006e48e724593
   languageName: node
   linkType: hard
 
-"@auto-it/core@npm:11.1.6":
-  version: 11.1.6
-  resolution: "@auto-it/core@npm:11.1.6"
+"@auto-it/core@npm:11.3.0":
+  version: 11.3.0
+  resolution: "@auto-it/core@npm:11.3.0"
   dependencies:
-    "@auto-it/bot-list": "npm:11.1.6"
+    "@auto-it/bot-list": "npm:11.3.0"
     "@endemolshinegroup/cosmiconfig-typescript-loader": "npm:^3.0.2"
     "@octokit/core": "npm:^3.5.1"
     "@octokit/plugin-enterprise-compatibility": "npm:1.3.0"
@@ -61,16 +61,16 @@ __metadata:
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10c0/b1d70d53eb74821cddba48480927f01c8984c8e766fb615d57f2704ae0e7ce5bd55852cd1019cf71ac48bc6cbd6db6fef4e7f9d37a6a4ceaac1a2adfa29c8e0d
+  checksum: 10c0/c93ce7772f213ef893682a9c51d6938c087e65054d3dbdf1c7fe6ce55aeb5cc19db619e3fa7002e52e8c2212cea6c9fc20272920a54a97e1b96590dc0cfbb3bc
   languageName: node
   linkType: hard
 
-"@auto-it/npm@npm:11.1.6":
-  version: 11.1.6
-  resolution: "@auto-it/npm@npm:11.1.6"
+"@auto-it/npm@npm:11.3.0":
+  version: 11.3.0
+  resolution: "@auto-it/npm@npm:11.3.0"
   dependencies:
-    "@auto-it/core": "npm:11.1.6"
-    "@auto-it/package-json-utils": "npm:11.1.6"
+    "@auto-it/core": "npm:11.3.0"
+    "@auto-it/package-json-utils": "npm:11.3.0"
     await-to-js: "npm:^3.0.0"
     endent: "npm:^2.1.0"
     env-ci: "npm:^5.0.1"
@@ -83,44 +83,44 @@ __metadata:
     typescript-memoize: "npm:^1.0.0-alpha.3"
     url-join: "npm:^4.0.0"
     user-home: "npm:^2.0.0"
-  checksum: 10c0/efe5ca78b65a064a7097d519e4e77da8182205491550f3f4a5a3bde780ef1ee095c9cc905bd535bb71d19409847566eb88e7e867592d6e3042a7b59390a85c38
+  checksum: 10c0/0410de3d27b61665b8c53c4f0cc0c8de567bf209dcbee7c9e58423afb87e9a410231f59982140392b005b8d2cdec9b8401f97e0445e2bd5a01e09c114ad4fe21
   languageName: node
   linkType: hard
 
-"@auto-it/package-json-utils@npm:11.1.6":
-  version: 11.1.6
-  resolution: "@auto-it/package-json-utils@npm:11.1.6"
+"@auto-it/package-json-utils@npm:11.3.0":
+  version: 11.3.0
+  resolution: "@auto-it/package-json-utils@npm:11.3.0"
   dependencies:
     parse-author: "npm:^2.0.0"
     parse-github-url: "npm:1.0.2"
-  checksum: 10c0/a1cb6638eb476aedf2eb86e2be37c0e270dd47fca422526fa7b243c691090ab112a0f32c113693a910e22915f271fae50e683ae72c2c0762aa88607310a85777
+  checksum: 10c0/4ad477a7690efea90a4220930c6b83d3da6d7085f36f20b88c334bc51b8e0db42c9d7d084f8649356e375643887cd90ed9e105da6bae68f2b5030688dfb31773
   languageName: node
   linkType: hard
 
-"@auto-it/released@npm:11.1.6":
-  version: 11.1.6
-  resolution: "@auto-it/released@npm:11.1.6"
+"@auto-it/released@npm:11.3.0":
+  version: 11.3.0
+  resolution: "@auto-it/released@npm:11.3.0"
   dependencies:
-    "@auto-it/bot-list": "npm:11.1.6"
-    "@auto-it/core": "npm:11.1.6"
+    "@auto-it/bot-list": "npm:11.3.0"
+    "@auto-it/core": "npm:11.3.0"
     deepmerge: "npm:^4.0.0"
     fp-ts: "npm:^2.5.3"
     io-ts: "npm:^2.1.2"
     tslib: "npm:2.1.0"
-  checksum: 10c0/3b0991f5736235cf19714a59f8022753086beb68d4bc94a291b274cee5f4fe72ceb850864694adeb4c7cce0f6b162c4feb4e83affea81186816ffc5f380c3337
+  checksum: 10c0/26a44d071b86014dc70b03b60b015835c8b2ca798981eff1027a20bf76ee1abc5fa29b46f0a33c0537d2d4f63c76aa3f7f35a6ee148cc91ddb327d577452f6ef
   languageName: node
   linkType: hard
 
-"@auto-it/version-file@npm:11.1.6":
-  version: 11.1.6
-  resolution: "@auto-it/version-file@npm:11.1.6"
+"@auto-it/version-file@npm:11.3.0":
+  version: 11.3.0
+  resolution: "@auto-it/version-file@npm:11.3.0"
   dependencies:
-    "@auto-it/core": "npm:11.1.6"
+    "@auto-it/core": "npm:11.3.0"
     fp-ts: "npm:^2.5.3"
     io-ts: "npm:^2.1.2"
     semver: "npm:^7.0.0"
     tslib: "npm:1.10.0"
-  checksum: 10c0/4a209008184a37af4f0598c051be26d321ca0605470a9e74940d71aff4b9bb61c95c8cd19bbff9dd5eff86577bddd7ae45cd3b2742adc7ca103fb10875ab82c4
+  checksum: 10c0/c62f52a89ed003dd8c00c54788750a6b5dbc047fc54ce50753c64a6261b548ad8b8d9ed23b5f92663c4c012b99651e6910438c0d8654374c7bee1a2593017c9b
   languageName: node
   linkType: hard
 
@@ -2962,13 +2962,13 @@ __metadata:
   linkType: hard
 
 "auto@npm:^11.1.6":
-  version: 11.1.6
-  resolution: "auto@npm:11.1.6"
+  version: 11.3.0
+  resolution: "auto@npm:11.3.0"
   dependencies:
-    "@auto-it/core": "npm:11.1.6"
-    "@auto-it/npm": "npm:11.1.6"
-    "@auto-it/released": "npm:11.1.6"
-    "@auto-it/version-file": "npm:11.1.6"
+    "@auto-it/core": "npm:11.3.0"
+    "@auto-it/npm": "npm:11.3.0"
+    "@auto-it/released": "npm:11.3.0"
+    "@auto-it/version-file": "npm:11.3.0"
     await-to-js: "npm:^3.0.0"
     chalk: "npm:^4.0.0"
     command-line-application: "npm:^0.10.1"
@@ -2979,7 +2979,7 @@ __metadata:
     tslib: "npm:2.1.0"
   bin:
     auto: dist/bin/auto.js
-  checksum: 10c0/1009df6c407c16622e10d506083b97d8c25cc70f1a34d70c10baaddf5895b446ebf3c118a293d229f94d52ce9578d00318993c29e1325c2995770155497ad576
+  checksum: 10c0/01389c0a7721848caddc89faadd895a2a19319eacb156a62bae1bc01601eacfb504b3d8d06e81de1d5ac1febc6c8055d73ec031b4137fcaf026143ac68dda3c9
   languageName: node
   linkType: hard
 
