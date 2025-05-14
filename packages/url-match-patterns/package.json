@@ -35,11 +35,11 @@
   },
   "devDependencies": {
     "@remusao/bench": "^2.0.0",
-    "@types/chai": "^4.2.8",
+    "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.7",
     "@types/node": "^22.15.18",
     "@types/url-match-patterns": "^0.2.2",
-    "chai": "^4.2.0",
+    "chai": "^5.2.0",
     "eslint": "^9.23.0",
     "match-url-wildcard": "0.0.5",
     "mocha": "^11.2.2",
