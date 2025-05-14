@@ -2274,7 +2274,7 @@ __metadata:
     "@types/url-match-patterns": "npm:^0.2.2"
     chai: "npm:^4.2.0"
     eslint: "npm:^9.23.0"
-    match-url-wildcard: "npm:0.0.4"
+    match-url-wildcard: "npm:0.0.5"
     mocha: "npm:^11.2.2"
     nyc: "npm:^15.0.0"
     rimraf: "npm:^3.0.0"
@@ -6543,12 +6543,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"match-url-wildcard@npm:0.0.4":
-  version: 0.0.4
-  resolution: "match-url-wildcard@npm:0.0.4"
+"match-url-wildcard@npm:0.0.5":
+  version: 0.0.5
+  resolution: "match-url-wildcard@npm:0.0.5"
   dependencies:
     escape-string-regexp: "npm:^1.0.5"
-  checksum: 10c0/f3013d742b528a0ce7098d64e2d38ec529acb7491b98a430bab8e28bf2c6f544778f4b08af9ea1f1705113c17e612065d63310d3517cf5a3232bd073cecb029b
+  checksum: 10c0/232a88c00f706a747b0199796405ed41cec182373d04b7e765dd0eb576946138e266d4c5416803c7a48cb3409110934821ee58ce06927d7ecfd5794060329b30
   languageName: node
   linkType: hard
 
