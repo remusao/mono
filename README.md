@@ -53,3 +53,8 @@ Other thoughts:
   I expect a migration of the repository to 100% ES6 modules before end of 2020
   when all tooling is compatible (e.g. mocha is currently adding first-class
   support for ES6 modules).
+
+## Development setup
+
+* `corepack enable`
+* `yarn install --immutable`
