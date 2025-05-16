@@ -15,6 +15,7 @@ import wav from './wav.js';
 import webm from './webm.js';
 import webp from './webp.js';
 import wmv from './wmv.js';
+import { PREFIX, Resource } from './types.js';
 
 // List of mime types:
 // - [ ] .aac 	AAC audio 	audio/aac
@@ -93,10 +94,7 @@ import wmv from './wmv.js';
 
 const MIME_TO_RESOURCE = (() => {
   const resources: {
-    [mime: string]: {
-      contentType: string;
-      body: string;
-    };
+    [mime: string]: Resource;
   } = {};
   for (const fake of [
     flv,
@@ -129,8 +127,9 @@ export function getFallbackTextResource() {
   return txt;
 }
 
-export function getFallbackBlobResource() {
+export function getFallbackBlobResource(): Resource {
   return {
+    name: `${PREFIX}.blob`,
     contentType: 'application/octet-stream;base64',
     aliases: ['application/octet-stream'],
     body: 'Cg==',
@@ -169,3 +168,26 @@ export {
   webp,
   wmv,
 };
+
+export const resources: Resource[] = [
+  flv,
+  gif,
+  html,
+  ico,
+  jpg,
+  js,
+  json,
+  mp3,
+  mp4,
+  pdf,
+  png,
+  svg,
+  txt,
+  wav,
+  webm,
+  webp,
+  wmv,
+];
+
+export { PREFIX };
+export type { Resource };

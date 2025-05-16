@@ -1,6 +1,9 @@
+import { PREFIX, Resource } from './types.js';
+
 export const CONTENT_TYPE = 'application/javascript';
 
-export default {
+const resource: Resource = {
+  name: `${PREFIX}.js`,
   contentType: CONTENT_TYPE,
   aliases: [
     CONTENT_TYPE,
@@ -17,3 +20,4 @@ export default {
   ],
   body: '',
 };
+export default resource;
