@@ -1,4 +1,4 @@
-import { PREFIX } from './types.js';
+import { PREFIX, Resource } from './types.js';
 
 export const CONTENT_TYPE = 'text/html';
 
@@ -15,4 +15,4 @@ export default {
     'noop.html',
   ],
   body: '<!DOCTYPE html>',
-} as const;
+} as Resource;

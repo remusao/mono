@@ -1,4 +1,4 @@
-import { PREFIX } from './types.js';
+import { PREFIX, Resource } from './types.js';
 
 export const CONTENT_TYPE = 'text/plain';
 
@@ -7,4 +7,4 @@ export default {
   contentType: CONTENT_TYPE,
   aliases: [CONTENT_TYPE, '.txt', 'txt', 'text', 'nooptext', 'noop.txt'],
   body: '',
-} as const;
+} as Resource;

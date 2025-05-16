@@ -1,4 +1,4 @@
-import { PREFIX } from './types.js';
+import { PREFIX, Resource } from './types.js';
 
 export const CONTENT_TYPE = 'audio/wav';
 
@@ -7,4 +7,4 @@ export default {
   contentType: `${CONTENT_TYPE};base64`,
   aliases: [CONTENT_TYPE, '.wav', 'wav'],
   body: 'UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=',
-} as const;
+} as Resource;

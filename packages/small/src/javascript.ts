@@ -1,4 +1,4 @@
-import { PREFIX } from './types.js';
+import { PREFIX, Resource } from './types.js';
 
 export const CONTENT_TYPE = 'application/javascript';
 
@@ -19,4 +19,4 @@ export default {
     'noopjs',
   ],
   body: '',
-} as const;
+} as Resource;
