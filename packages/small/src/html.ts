@@ -1,9 +1,9 @@
-import { namePrefix } from './types.js';
+import { PREFIX } from './types.js';
 
 export const CONTENT_TYPE = 'text/html';
 
 export default {
-  name: `${namePrefix}.html`,
+  name: `${PREFIX}.html`,
   contentType: CONTENT_TYPE,
   aliases: [
     CONTENT_TYPE,

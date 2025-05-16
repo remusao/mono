@@ -15,7 +15,7 @@ import wav from './wav.js';
 import webm from './webm.js';
 import webp from './webp.js';
 import wmv from './wmv.js';
-import { namePrefix, Resource } from './types.js';
+import { PREFIX, Resource } from './types.js';
 
 // List of mime types:
 // - [ ] .aac 	AAC audio 	audio/aac
@@ -129,7 +129,7 @@ export function getFallbackTextResource() {
 
 export function getFallbackBlobResource(): Resource {
   return {
-    name: `${namePrefix}.blob`,
+    name: `${PREFIX}.blob`,
     contentType: 'application/octet-stream;base64',
     aliases: ['application/octet-stream'],
     body: 'Cg==',

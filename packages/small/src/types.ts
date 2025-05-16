@@ -1,7 +1,7 @@
-export const namePrefix = 'MIME_TYPE_STUB';
+export const PREFIX = 'MIME_TYPE_STUB';
 
 export type Resource = {
-  name: `${typeof namePrefix}.${string}`;
+  name: `${typeof PREFIX}.${string}`;
   contentType: string;
   aliases: readonly string[];
   body: string;

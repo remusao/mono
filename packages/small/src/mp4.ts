@@ -1,9 +1,9 @@
-import { namePrefix } from './types.js';
+import { PREFIX } from './types.js';
 
 const CONTENT_TYPE = 'video/mp4';
 
 export default {
-  name: `${namePrefix}.mp4`,
+  name: `${PREFIX}.mp4`,
   contentType: `${CONTENT_TYPE};base64`,
   aliases: [
     CONTENT_TYPE,
