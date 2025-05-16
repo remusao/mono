@@ -2,7 +2,7 @@ import { PREFIX, Resource } from './types.js';
 
 export const CONTENT_TYPE = 'text/html';
 
-export default {
+const resource: Resource = {
   name: `${PREFIX}.html`,
   contentType: CONTENT_TYPE,
   aliases: [
@@ -15,4 +15,5 @@ export default {
     'noop.html',
   ],
   body: '<!DOCTYPE html>',
-} as Resource;
+};
+export default resource;

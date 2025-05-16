@@ -2,7 +2,7 @@ import { PREFIX, Resource } from './types.js';
 
 export const CONTENT_TYPE = 'application/javascript';
 
-export default {
+const resource: Resource = {
   name: `${PREFIX}.js`,
   contentType: CONTENT_TYPE,
   aliases: [
@@ -19,4 +19,5 @@ export default {
     'noopjs',
   ],
   body: '',
-} as Resource;
+};
+export default resource;
