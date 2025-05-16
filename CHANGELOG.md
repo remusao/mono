@@ -1,3 +1,54 @@
+# (Fri May 16 2025)
+
+#### :rocket: New Feature
+
+- `@remusao/small@2.1.0`
+  - feat(name): introduce `name` property [#869](https://github.com/remusao/mono/pull/869) ([@seia-soto](https://github.com/seia-soto))
+
+#### :house: Internal
+
+- chore: update lockfile [#864](https://github.com/remusao/mono/pull/864) ([@seia-soto](https://github.com/seia-soto))
+
+#### :nut_and_bolt: Dependencies
+
+- Update lerna [#872](https://github.com/remusao/mono/pull/872) ([@chrmod](https://github.com/chrmod))
+- Update node [#871](https://github.com/remusao/mono/pull/871) ([@chrmod](https://github.com/chrmod))
+- build(deps-dev): bump eslint from 9.23.0 to 9.26.0 [#856](https://github.com/remusao/mono/pull/856) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump @babel/traverse from 7.12.1 to 7.27.1 [#867](https://github.com/remusao/mono/pull/867) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump @eslint/js from 9.23.0 to 9.26.0 [#852](https://github.com/remusao/mono/pull/852) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump eslint-config-prettier from 10.1.1 to 10.1.5 [#855](https://github.com/remusao/mono/pull/855) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump eslint-plugin-prettier from 5.2.5 to 5.4.0 [#859](https://github.com/remusao/mono/pull/859) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump tsx from 4.19.3 to 4.19.4 [#849](https://github.com/remusao/mono/pull/849) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump auto from 11.1.6 to 11.3.0 [#848](https://github.com/remusao/mono/pull/848) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump @types/benchmark from 2.1.1 to 2.1.5 [#862](https://github.com/remusao/mono/pull/862) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump braces from 3.0.2 to 3.0.3 [#865](https://github.com/remusao/mono/pull/865) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump get-func-name from 2.0.0 to 2.0.2 [#866](https://github.com/remusao/mono/pull/866) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): bump @babel/helpers from 7.12.1 to 7.27.1 [#868](https://github.com/remusao/mono/pull/868) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump typescript-eslint from 8.29.0 to 8.32.1 [#847](https://github.com/remusao/mono/pull/847) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- `@remusao/badger@2.1.0`, `@remusao/bench@2.1.0`, `@remusao/counter@2.1.0`, `@remusao/guess-url-type@2.1.0`, `@remusao/small@2.1.0`, `@remusao/smaz-compress@2.2.0`, `@remusao/smaz-decompress@2.2.0`, `@remusao/smaz-generate@2.2.0`, `@remusao/smaz@2.2.0`, `@remusao/thunderbird-msg-filters@2.1.0`, `@remusao/trie@2.1.0`, `@remusao/url-match-patterns@2.1.0`
+  - build(deps-dev): bump nyc from 15.1.0 to 17.1.0 [#854](https://github.com/remusao/mono/pull/854) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+  - build(deps-dev): bump chai and @types/chai [#861](https://github.com/remusao/mono/pull/861) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+  - build(deps-dev): bump mocha from 10.6.0 to 11.2.2 [#863](https://github.com/remusao/mono/pull/863) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- `@remusao/badger@2.1.0`, `@remusao/bench@2.1.0`, `@remusao/counter@2.1.0`, `@remusao/guess-url-type@2.1.0`, `@remusao/small@2.1.0`, `@remusao/smaz-benchmarks@2.2.0`, `@remusao/smaz-compress@2.2.0`, `@remusao/smaz-decompress@2.2.0`, `@remusao/smaz-generate@2.2.0`, `@remusao/smaz@2.2.0`, `@remusao/thunderbird-msg-filters@2.1.0`, `@remusao/trie@2.1.0`, `@remusao/url-match-patterns@2.1.0`
+  - build(deps-dev): bump rimraf from 3.0.2 to 6.0.1 [#858](https://github.com/remusao/mono/pull/858) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+  - build(deps-dev): bump typescript from 5.5.2 to 5.8.3 [#851](https://github.com/remusao/mono/pull/851) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- `@remusao/url-match-patterns@2.1.0`
+  - build(deps-dev): bump match-url-wildcard from 0.0.4 to 0.0.5 [#846](https://github.com/remusao/mono/pull/846) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- `@remusao/badger@2.1.0`, `@remusao/counter@2.1.0`, `@remusao/guess-url-type@2.1.0`, `@remusao/small@2.1.0`, `@remusao/smaz-benchmarks@2.2.0`, `@remusao/smaz@2.2.0`, `@remusao/thunderbird-msg-filters@2.1.0`, `@remusao/url-match-patterns@2.1.0`
+  - chore(deps-dev): bump @types/node from 20.14.10 to 22.15.18 [#870](https://github.com/remusao/mono/pull/870) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- `@remusao/badger@2.1.0`
+  - build(deps-dev): bump @types/chrome from 0.0.268 to 0.0.322 [#853](https://github.com/remusao/mono/pull/853) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- `@remusao/smaz-benchmarks@2.2.0`
+  - build(deps): bump chalk from 4.1.2 to 5.4.1 [#850](https://github.com/remusao/mono/pull/850) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- HoJeong Go ([@seia-soto](https://github.com/seia-soto))
+- Krzysztof Modras ([@chrmod](https://github.com/chrmod))
+
+---
+
 # (Thu Apr 10 2025)
 
 #### :rocket: New Feature

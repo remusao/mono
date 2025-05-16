@@ -1,3 +1,20 @@
+# v2.1.0 (Fri May 16 2025)
+
+#### :nut_and_bolt: Dependencies
+
+- build(deps-dev): bump nyc from 15.1.0 to 17.1.0 [#854](https://github.com/remusao/mono/pull/854) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump rimraf from 3.0.2 to 6.0.1 [#858](https://github.com/remusao/mono/pull/858) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump chai and @types/chai [#861](https://github.com/remusao/mono/pull/861) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump typescript from 5.5.2 to 5.8.3 [#851](https://github.com/remusao/mono/pull/851) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps-dev): bump @types/node from 20.14.10 to 22.15.18 [#870](https://github.com/remusao/mono/pull/870) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- build(deps-dev): bump mocha from 10.6.0 to 11.2.2 [#863](https://github.com/remusao/mono/pull/863) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v2.0.0 (Mon Apr 07 2025)
 
 #### :boom: Breaking Change
