@@ -188,3 +188,6 @@ export const resources = [
   webp,
   wmv,
 ] satisfies Resource[];
+
+export { PREFIX };
+export type { Resource };
