@@ -1,6 +1,6 @@
 {
   "name": "@remusao/smaz-compress",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Compress strings using custom codebooks",
   "author": "Rémi Berson <remi@cliqz.com>",
   "homepage": "https://github.com/remusao/mono#readme",
@@ -34,7 +34,7 @@
     "url": "https://github.com/remusao/mono/issues"
   },
   "dependencies": {
-    "@remusao/trie": "^2.0.0"
+    "@remusao/trie": "^2.1.0"
   },
   "devDependencies": {
     "@types/chai": "^5.2.2",
