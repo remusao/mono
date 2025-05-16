@@ -169,7 +169,7 @@ export {
   wmv,
 };
 
-export const resources = [
+export const resources: Resource[] = [
   flv,
   gif,
   html,
@@ -187,7 +187,7 @@ export const resources = [
   webm,
   webp,
   wmv,
-] satisfies Resource[];
+];
 
 export { PREFIX };
 export type { Resource };
