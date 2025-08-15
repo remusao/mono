@@ -1620,7 +1620,7 @@ __metadata:
   resolution: "@remusao/badger@workspace:packages/badger"
   dependencies:
     "@types/chai": "npm:^5.2.2"
-    "@types/chrome": "npm:^0.0.322"
+    "@types/chrome": "npm:^0.1.4"
     "@types/filesystem": "npm:^0.0.36"
     "@types/firefox-webext-browser": "npm:^120.0.4"
     "@types/mocha": "npm:^10.0.7"
@@ -1982,13 +1982,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chrome@npm:^0.0.322":
-  version: 0.0.322
-  resolution: "@types/chrome@npm:0.0.322"
+"@types/chrome@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "@types/chrome@npm:0.1.4"
   dependencies:
     "@types/filesystem": "npm:*"
     "@types/har-format": "npm:*"
-  checksum: 10c0/6568a499963f65d0af4a9c9aed9137924178be21ace2d39c2fcc9123eaee05d55e6cc1d1687cbdd0937445a49fd829896d3c0af74125a0e0b0bc513c5e112bf6
+  checksum: 10c0/5a6509f06bcddd30376803792bf0153cd3cdc0ff8881ae94a0cb840052e77dce6967db72242b5b0d250a4be85fa2872ab122e7e8955a550fdb22a27dfa155e9f
   languageName: node
   linkType: hard
 
