@@ -1712,7 +1712,7 @@ __metadata:
     "@types/benchmark": "npm:^2.1.0"
     "@types/node": "npm:^22.15.18"
     benchmark: "npm:^2.1.4"
-    chalk: "npm:5.4.1"
+    chalk: "npm:5.6.0"
     eslint: "npm:^9.23.0"
     rimraf: "npm:^6.0.1"
     tsx: "npm:^4.19.3"
@@ -2922,10 +2922,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:5.4.1":
-  version: 5.4.1
-  resolution: "chalk@npm:5.4.1"
-  checksum: 10c0/b23e88132c702f4855ca6d25cb5538b1114343e41472d5263ee8a37cccfccd9c4216d111e1097c6a27830407a1dc81fecdf2a56f2c63033d4dbbd88c10b0dcef
+"chalk@npm:5.6.0":
+  version: 5.6.0
+  resolution: "chalk@npm:5.6.0"
+  checksum: 10c0/f8558fc12fd9805f167611803b325b0098bbccdc9f1d3bafead41c9bac61f263357f3c0df0cbe28bc2fd5fca3edcf618b01d6771a5a776b4c15d061482a72b23
   languageName: node
   linkType: hard
 
