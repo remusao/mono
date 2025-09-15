@@ -1624,7 +1624,7 @@ __metadata:
     "@types/filesystem": "npm:^0.0.36"
     "@types/firefox-webext-browser": "npm:^120.0.4"
     "@types/mocha": "npm:^10.0.7"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^24.4.0"
     chai: "npm:^5.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
@@ -1659,7 +1659,7 @@ __metadata:
   dependencies:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^24.4.0"
     chai: "npm:^5.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
@@ -1676,7 +1676,7 @@ __metadata:
   dependencies:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^24.4.0"
     chai: "npm:^5.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
@@ -1693,7 +1693,7 @@ __metadata:
   dependencies:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^24.4.0"
     chai: "npm:^5.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
@@ -1710,7 +1710,7 @@ __metadata:
   dependencies:
     "@remusao/smaz": "npm:^2.2.0"
     "@types/benchmark": "npm:^2.1.0"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^24.4.0"
     benchmark: "npm:^2.1.4"
     chalk: "npm:5.4.1"
     eslint: "npm:^9.23.0"
@@ -1780,7 +1780,7 @@ __metadata:
     "@remusao/smaz-decompress": "npm:^2.2.0"
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^24.4.0"
     chai: "npm:^5.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
@@ -1797,7 +1797,7 @@ __metadata:
   dependencies:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^24.4.0"
     chai: "npm:^5.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
@@ -1833,7 +1833,7 @@ __metadata:
     "@remusao/bench": "npm:^2.1.0"
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
-    "@types/node": "npm:^22.15.18"
+    "@types/node": "npm:^24.4.0"
     "@types/url-match-patterns": "npm:^0.2.2"
     chai: "npm:^5.2.0"
     eslint: "npm:^9.23.0"
@@ -2085,12 +2085,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.15.18":
-  version: 22.15.18
-  resolution: "@types/node@npm:22.15.18"
+"@types/node@npm:^24.4.0":
+  version: 24.4.0
+  resolution: "@types/node@npm:24.4.0"
   dependencies:
-    undici-types: "npm:~6.21.0"
-  checksum: 10c0/e23178c568e2dc6b93b6aa3b8dfb45f9556e527918c947fe7406a4c92d2184c7396558912400c3b1b8d0fa952ec63819aca2b8e4d3545455fc6f1e9623e09ca6
+    undici-types: "npm:~7.11.0"
+  checksum: 10c0/3aefa4c6b006b3478f2d28a48d830ab7350ce24efdaf352011418e3ee17ed7683ca9c0a1840e770685ce78f413344badafa91e034be02488efe2eb6b612bd542
   languageName: node
   linkType: hard
 
@@ -9594,10 +9594,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.21.0":
-  version: 6.21.0
-  resolution: "undici-types@npm:6.21.0"
-  checksum: 10c0/c01ed51829b10aa72fc3ce64b747f8e74ae9b60eafa19a7b46ef624403508a54c526ffab06a14a26b3120d055e1104d7abe7c9017e83ced038ea5cf52f8d5e04
+"undici-types@npm:~7.11.0":
+  version: 7.11.0
+  resolution: "undici-types@npm:7.11.0"
+  checksum: 10c0/24ff69baeaebc7d09f4dae68564df850b4ff561810148ff6c37d3fc64dd1460c55e59e604420495e73b1fb48594a1c98e69f6732086a24e01b88f2d926378af1
   languageName: node
   linkType: hard
 
