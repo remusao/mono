@@ -1625,7 +1625,7 @@ __metadata:
     "@types/firefox-webext-browser": "npm:^120.0.4"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^22.15.18"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1643,7 +1643,7 @@ __metadata:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
     benchmark: "npm:^2.1.4"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1660,7 +1660,7 @@ __metadata:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^22.15.18"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1677,7 +1677,7 @@ __metadata:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^22.15.18"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1694,7 +1694,7 @@ __metadata:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^22.15.18"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1727,7 +1727,7 @@ __metadata:
     "@remusao/trie": "npm:^2.1.0"
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1743,7 +1743,7 @@ __metadata:
   dependencies:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1762,7 +1762,7 @@ __metadata:
     "@remusao/smaz-compress": "npm:^2.2.0"
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1781,7 +1781,7 @@ __metadata:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^22.15.18"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1798,7 +1798,7 @@ __metadata:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^22.15.18"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1816,7 +1816,7 @@ __metadata:
   dependencies:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.7"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     mocha: "npm:^11.2.2"
     nyc: "npm:^17.1.0"
@@ -1835,7 +1835,7 @@ __metadata:
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^22.15.18"
     "@types/url-match-patterns": "npm:^0.2.2"
-    chai: "npm:^5.2.0"
+    chai: "npm:^6.2.0"
     eslint: "npm:^9.23.0"
     match-url-wildcard: "npm:0.0.5"
     mocha: "npm:^11.2.2"
@@ -2555,13 +2555,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"assertion-error@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "assertion-error@npm:2.0.1"
-  checksum: 10c0/bbbcb117ac6480138f8c93cf7f535614282dea9dc828f540cdece85e3c665e8f78958b96afac52f29ff883c72638e6a87d469ecc9fe5bc902df03ed24a55dba8
-  languageName: node
-  linkType: hard
-
 "async@npm:^3.2.3":
   version: 3.2.6
   resolution: "async@npm:3.2.6"
@@ -2899,16 +2892,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chai@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "chai@npm:5.2.0"
-  dependencies:
-    assertion-error: "npm:^2.0.1"
-    check-error: "npm:^2.1.1"
-    deep-eql: "npm:^5.0.1"
-    loupe: "npm:^3.1.0"
-    pathval: "npm:^2.0.0"
-  checksum: 10c0/dfd1cb719c7cebb051b727672d382a35338af1470065cb12adb01f4ee451bbf528e0e0f9ab2016af5fc1eea4df6e7f4504dc8443f8f00bd8fb87ad32dc516f7d
+"chai@npm:^6.2.0":
+  version: 6.2.0
+  resolution: "chai@npm:6.2.0"
+  checksum: 10c0/a4b7d7f5907187e09f1847afa838d6d1608adc7d822031b7900813c4ed5d9702911ac2468bf290676f22fddb3d727b1be90b57c1d0a69b902534ee29cdc6ff8a
   languageName: node
   linkType: hard
 
@@ -2971,13 +2958,6 @@ __metadata:
   version: 0.7.0
   resolution: "chardet@npm:0.7.0"
   checksum: 10c0/96e4731b9ec8050cbb56ab684e8c48d6c33f7826b755802d14e3ebfdc51c57afeece3ea39bc6b09acc359e4363525388b915e16640c1378053820f5e70d0f27d
-  languageName: node
-  linkType: hard
-
-"check-error@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "check-error@npm:2.1.1"
-  checksum: 10c0/979f13eccab306cf1785fa10941a590b4e7ea9916ea2a4f8c87f0316fc3eab07eabefb6e587424ef0f88cbcd3805791f172ea739863ca3d7ce2afc54641c7f0e
   languageName: node
   linkType: hard
 
@@ -3608,13 +3588,6 @@ __metadata:
   version: 0.7.0
   resolution: "dedent@npm:0.7.0"
   checksum: 10c0/7c3aa00ddfe3e5fcd477958e156156a5137e3bb6ff1493ca05edff4decf29a90a057974cc77e75951f8eb801c1816cb45aea1f52d628cdd000b82b36ab839d1b
-  languageName: node
-  linkType: hard
-
-"deep-eql@npm:^5.0.1":
-  version: 5.0.2
-  resolution: "deep-eql@npm:5.0.2"
-  checksum: 10c0/7102cf3b7bb719c6b9c0db2e19bf0aa9318d141581befe8c7ce8ccd39af9eaa4346e5e05adef7f9bd7015da0f13a3a25dcfe306ef79dc8668aedbecb658dd247
   languageName: node
   linkType: hard
 
@@ -6328,13 +6301,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loupe@npm:^3.1.0":
-  version: 3.1.3
-  resolution: "loupe@npm:3.1.3"
-  checksum: 10c0/f5dab4144254677de83a35285be1b8aba58b3861439ce4ba65875d0d5f3445a4a496daef63100ccf02b2dbc25bf58c6db84c9cb0b96d6435331e9d0a33b48541
-  languageName: node
-  linkType: hard
-
 "lru-cache@npm:^10.0.1, lru-cache@npm:^10.2.0, lru-cache@npm:^10.2.2":
   version: 10.4.3
   resolution: "lru-cache@npm:10.4.3"
@@ -7769,13 +7735,6 @@ __metadata:
   version: 4.0.0
   resolution: "path-type@npm:4.0.0"
   checksum: 10c0/666f6973f332f27581371efaf303fd6c272cc43c2057b37aa99e3643158c7e4b2626549555d88626e99ea9e046f82f32e41bbde5f1508547e9a11b149b52387c
-  languageName: node
-  linkType: hard
-
-"pathval@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "pathval@npm:2.0.0"
-  checksum: 10c0/602e4ee347fba8a599115af2ccd8179836a63c925c23e04bd056d0674a64b39e3a081b643cc7bc0b84390517df2d800a46fcc5598d42c155fe4977095c2f77c5
   languageName: node
   linkType: hard
 
