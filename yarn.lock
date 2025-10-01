@@ -1631,7 +1631,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1649,7 +1649,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1666,7 +1666,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1683,7 +1683,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1700,7 +1700,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1716,7 +1716,7 @@ __metadata:
     eslint: "npm:^9.23.0"
     rimraf: "npm:^6.0.1"
     tsx: "npm:^4.19.3"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1733,7 +1733,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1749,7 +1749,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1768,7 +1768,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1787,7 +1787,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1804,7 +1804,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   bin:
     thunderbird-msg-filters: bin/cli.js
   languageName: unknown
@@ -1822,7 +1822,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
 
@@ -1842,7 +1842,7 @@ __metadata:
     nyc: "npm:^17.1.0"
     rimraf: "npm:^6.0.1"
     tshy: "npm:^3.0.2"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
     url-match-patterns: "npm:^0.2.0"
   languageName: unknown
   linkType: soft
@@ -6836,7 +6836,7 @@ __metadata:
     lerna: "npm:8.2.2"
     prettier: "npm:^3.5.3"
     tsx: "npm:^4.19.3"
-    typescript: "npm:5.8.3"
+    typescript: "npm:5.9.3"
     typescript-eslint: "npm:^8.29.0"
   languageName: unknown
   linkType: soft
@@ -9531,7 +9531,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.8.3, typescript@npm:>=3 < 6":
+"typescript@npm:5.9.3":
+  version: 5.9.3
+  resolution: "typescript@npm:5.9.3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/6bd7552ce39f97e711db5aa048f6f9995b53f1c52f7d8667c1abdc1700c68a76a308f579cd309ce6b53646deb4e9a1be7c813a93baaf0a28ccd536a30270e1c5
+  languageName: node
+  linkType: hard
+
+"typescript@npm:>=3 < 6":
   version: 5.8.3
   resolution: "typescript@npm:5.8.3"
   bin:
@@ -9551,7 +9561,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A>=3 < 6#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>":
+  version: 5.9.3
+  resolution: "typescript@patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=b45daf"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/6f7e53bf0d9702350deeb6f35e08b69cbc8b958c33e0ec77bdc0ad6a6c8e280f3959dcbfde6f5b0848bece57810696489deaaa53d75de3578ff255d168c1efbd
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A>=3 < 6#optional!builtin<compat/typescript>":
   version: 5.8.3
   resolution: "typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=b45daf"
   bin:
