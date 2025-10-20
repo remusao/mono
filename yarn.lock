@@ -1622,7 +1622,7 @@ __metadata:
     "@types/chai": "npm:^5.2.2"
     "@types/chrome": "npm:^0.0.322"
     "@types/filesystem": "npm:^0.0.36"
-    "@types/firefox-webext-browser": "npm:^120.0.4"
+    "@types/firefox-webext-browser": "npm:^143.0.0"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^22.15.18"
     chai: "npm:^5.2.0"
@@ -2036,10 +2036,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/firefox-webext-browser@npm:^120.0.4":
-  version: 120.0.4
-  resolution: "@types/firefox-webext-browser@npm:120.0.4"
-  checksum: 10c0/75982a9c2dfdec8808a5a2356ff11e221d7891aebdb8e5c74cfcf6ac2ccd260dfd4b6b79ec99c214e17d1e6b1a6ff391a8dd0b569ba822c22246b4e6b5aaea34
+"@types/firefox-webext-browser@npm:^143.0.0":
+  version: 143.0.0
+  resolution: "@types/firefox-webext-browser@npm:143.0.0"
+  checksum: 10c0/2e4ca8f438386015c65d08ed967f24cd7fcee0bed3e1babcf8a797b3d6179c3f9c06bee169df91e0cff4db443e630cba7cc0020e1c58f7c9be7eea10961aad93
   languageName: node
   linkType: hard
 
